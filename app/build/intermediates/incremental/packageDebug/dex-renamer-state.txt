@@ -1,0 +1,7 @@
+#Wed Sep 21 14:10:41 CEST 2016
+base.0=C\:\\Users\\Maickel\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7d35a2767c3b4c2b06aa23f08ee5e4cda1eb1f62
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Maickel\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_fcce952200f396ec09e22905e5bf57429467bf3f\\classes.dex
+base.1=C\:\\Users\\Maickel\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_fcce952200f396ec09e22905e5bf57429467bf3f
+file.0=C\:\\Users\\Maickel\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7d35a2767c3b4c2b06aa23f08ee5e4cda1eb1f62\\classes.dex
