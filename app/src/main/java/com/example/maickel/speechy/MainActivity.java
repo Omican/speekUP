@@ -19,6 +19,7 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,8 @@ public class MainActivity extends Activity {
     private TextView txtSpeechInput;
     private ImageButton btnSpeak;
     private long startTime;
+    private Button openTextScreen;
+    private ArrayList<String> result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,7 @@ public class MainActivity extends Activity {
 
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
+        openTextScreen = (Button) findViewById(R.id.openTextScreen);
 
         // hide the action bar
        // getActionBar().hide();
@@ -87,7 +91,7 @@ public class MainActivity extends Activity {
                     long elapsedTime = System.currentTimeMillis() - startTime;
                     double seconds = elapsedTime / 1000.0;
 
-                    ArrayList<String> result = data
+                    result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     wordAmount = result.get(0).trim().split(" ").length;
 
@@ -101,8 +105,10 @@ public class MainActivity extends Activity {
                     String[] list = result.get(0).split(" ");
                     Map<String, Integer> stringsCount = new HashMap<>();
 
+
+
                     for(String s : list){
-                        if(s != 'de' && s!= 'het' && s != 'een' && s != 'De' && s != 'Het' && s != 'Een' ) {
+                        if(s != "de" && s!= "het" && s != "een" && s != "De" && s != "Het" && s != "Een" ) {
                             Integer c = stringsCount.get(s);
                             if (c == null) c = new Integer(0);
                             c++;
@@ -116,8 +122,7 @@ public class MainActivity extends Activity {
                             mostRepeated = e;
                         }
                     }
-                    txtSpeechInput.setText(result.get(0)
-                            +  "\n\n Je hebt " + wordAmount + " woorden gesproken" + " \n In " + seconds + " seconden"
+                    txtSpeechInput.setText("Je hebt " + wordAmount + " woorden gesproken" + " \n In " + seconds + " seconden"
                     + "\n\n Het meest voorkomende woord is " + mostRepeated.getKey() + " met " + mostRepeated.getValue() + " keer");
                 }
                 break;
@@ -132,5 +137,12 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+    public void openTextView(View v){
+        Intent intent = new Intent(getApplicationContext(), ShowText.class);
+        intent.putExtra("SpokenText", result);
+        startActivity(intent);
+    }
+
 
 }
