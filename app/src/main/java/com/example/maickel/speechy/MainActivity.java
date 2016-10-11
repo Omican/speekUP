@@ -1,6 +1,7 @@
 package com.example.maickel.speechy;
 
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
+import java.util.StringTokenizer;
 import java.util.Timer;
 
 import android.app.Activity;
@@ -32,6 +34,7 @@ public class MainActivity extends Activity {
     private long startTime;
     private Button openTextScreen;
     private ArrayList<String> result;
+    private ArrayList<String> keyWords;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,46 +87,17 @@ public class MainActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case REQ_CODE_SPEECH_INPUT: {
-                String checkInput = "test";
                 if (resultCode == RESULT_OK && null != data) {
-                    int wordAmount = 0;
-                    int inputAmount = 0;
                     long elapsedTime = System.currentTimeMillis() - startTime;
                     double seconds = elapsedTime / 1000.0;
 
                     result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    wordAmount = result.get(0).trim().split(" ").length;
-
-                    for(int x = 0; x < wordAmount; x++){
-                        String[] words = result.get(0).split(" ");
-                        if(words[x].equals(checkInput) ){
-                            inputAmount++;
-                        }
-                    }
 
                     String[] list = result.get(0).split(" ");
-                    Map<String, Integer> stringsCount = new HashMap<>();
 
-
-
-                    for(String s : list){
-                        if(s != "de" && s!= "het" && s != "een" && s != "De" && s != "Het" && s != "Een" ) {
-                            Integer c = stringsCount.get(s);
-                            if (c == null) c = new Integer(0);
-                            c++;
-                            stringsCount.put(s, c);
-                        }
-                    }
-
-                    Map.Entry<String, Integer> mostRepeated = null;
-                    for(Map.Entry<String, Integer> e: stringsCount.entrySet()){
-                        if(mostRepeated == null || mostRepeated.getValue() < e.getValue()){
-                            mostRepeated = e;
-                        }
-                    }
-                    txtSpeechInput.setText("Je hebt " + wordAmount + " woorden gesproken" + " \n In " + seconds + " seconden"
-                    + "\n\n Het meest voorkomende woord is " + mostRepeated.getKey() + " met " + mostRepeated.getValue() + " keer");
+                    txtSpeechInput.setText("Je hebt " + countWords(result) + " woorden gesproken" + " \n In " + seconds + " seconden"
+                    + "\n\n Het meest voorkomende woord is " + countMostRepeated(list).getKey() + " met " + countMostRepeated(list).getValue() + " keer");
                 }
                 break;
             }
@@ -142,6 +116,50 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(getApplicationContext(), ShowText.class);
         intent.putExtra("SpokenText", result);
         startActivity(intent);
+    }
+
+    public Map<String, Integer> countKeyWords(ArrayList<String> keyWords, Integer wordAmount, ArrayList<String> result){
+        Map<String, Integer> keyWordCount = new HashMap<>();
+
+        for(int y = 0; y < keyWords.size(); y++){
+            int inputAmount = 0;
+            for(int x = 0; x < wordAmount; x++) {
+                String[] words = result.get(0).split(" ");
+                if (words[x].equals(keyWords.get(y))) {
+                    inputAmount++;
+                }
+                keyWordCount.put(keyWords.get(y), inputAmount);
+            }
+        }
+        return keyWordCount;
+    }
+
+    public Map.Entry<String, Integer> countMostRepeated(String[] list){
+        Map<String, Integer> stringsCount = new HashMap<>();
+
+        for(String s : list){
+            if(s != "de" && s!= "het" && s != "een" && s != "De" && s != "Het" && s != "Een" ) {
+                Integer c = stringsCount.get(s);
+                if (c == null) c = new Integer(0);
+                c++;
+                stringsCount.put(s, c);
+            }
+        }
+
+        Map.Entry<String, Integer> mostRepeated = null;
+
+        for(Map.Entry<String, Integer> e: stringsCount.entrySet()){
+            if(mostRepeated == null || mostRepeated.getValue() < e.getValue()){
+                mostRepeated = e;
+            }
+        }
+
+        return mostRepeated;
+    }
+
+    public Integer countWords (ArrayList<String> result){
+        Integer wordAmount = result.get(0).trim().split(" ").length;
+        return wordAmount;
     }
 
 

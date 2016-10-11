@@ -84,6 +84,10 @@
         "source": "C:\\Users\\Maickel\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_search_view.xml"
     },
     {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_show_text.xml",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\layout\\activity_show_text.xml"
+    },
+    {
         "merged": "C:\\Users\\Maickel\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Maickel\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_part_time.xml"
     },
