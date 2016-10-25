@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical">
 
     <TextView
@@ -45,9 +46,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/openTextScreen"
+            android:background="@drawable/buttonshape"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:textSize="12px"
+            android:textSize="20px"
             android:onClick="openTextView"/>
     </LinearLayout>
 
