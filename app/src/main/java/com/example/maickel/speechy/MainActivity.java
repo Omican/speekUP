@@ -32,7 +32,6 @@ public class MainActivity extends Activity {
     private TextView txtSpeechInput;
     private ImageButton btnSpeak;
     private long startTime;
-    private Button openTextScreen;
     private ArrayList<String> result;
     private ArrayList<String> keyWords;
 
@@ -43,7 +42,6 @@ public class MainActivity extends Activity {
 
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
-        openTextScreen = (Button) findViewById(R.id.openTextScreen);
 
         // hide the action bar
        // getActionBar().hide();
@@ -55,7 +53,6 @@ public class MainActivity extends Activity {
                 promptSpeechInput();
             }
         });
-
     }
 
     /**

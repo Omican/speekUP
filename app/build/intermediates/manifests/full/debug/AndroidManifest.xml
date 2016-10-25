@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.maickel.speechy.ShowText" />
+        <activity android:name="com.example.maickel.speechy.addKeyWords" />
     </application>
 
 </manifest>

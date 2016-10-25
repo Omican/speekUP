@@ -276,6 +276,10 @@
         "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_key_words.xml",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\layout\\activity_add_key_words.xml"
+    },
+    {
         "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
         "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_action.xml"
     },

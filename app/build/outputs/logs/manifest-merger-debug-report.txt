@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidMani
 		INJECTED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:5:5-20:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
@@ -49,9 +49,13 @@ ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidMani
 	android:name
 		ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:15:27-74
 activity#com.example.maickel.speechy.ShowText
-ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:18:9-55
+ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:18:9-46
 	android:name
 		ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:18:19-43
+activity#com.example.maickel.speechy.addKeyWords
+ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:19:9-58
+	android:name
+		ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:19:19-46
 uses-sdk
 INJECTED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
