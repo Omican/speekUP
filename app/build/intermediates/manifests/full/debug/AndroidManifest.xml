@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.maickel.speechy.MainActivity" >
+        <activity android:name="com.example.maickel.speechy.MainScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,6 +23,8 @@
         </activity>
         <activity android:name="com.example.maickel.speechy.ShowText" />
         <activity android:name="com.example.maickel.speechy.addKeyWords" />
+        <activity android:name="com.example.maickel.speechy.MainActivity" />
+        <activity android:name="com.example.maickel.speechy.Options" />
     </application>
 
 </manifest>
