@@ -17,8 +17,10 @@ import java.util.Timer;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -33,7 +35,7 @@ public class MainActivity extends Activity {
     private ImageButton btnSpeak;
     private long startTime;
     private ArrayList<String> result;
-    private ArrayList<String> keyWords;
+    private Set<String> keyWords;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +45,8 @@ public class MainActivity extends Activity {
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
 
-        // hide the action bar
-       // getActionBar().hide();
+        SharedPreferences prefs = getSharedPreferences("my_prefs", 0);
+        keyWords = prefs.getStringSet("KeyWords", new HashSet<String>());
 
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 
@@ -92,9 +94,12 @@ public class MainActivity extends Activity {
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 
                     String[] list = result.get(0).split(" ");
+                    ArrayList<String> keyWordsList = new ArrayList<String>(keyWords);
 
-                    txtSpeechInput.setText("Je hebt " + countWords(result) + " woorden gesproken" + " \n In " + seconds + " seconden"
-                    + "\n\n Het meest voorkomende woord is " + countMostRepeated(list).getKey() + " met " + countMostRepeated(list).getValue() + " keer");
+                    txtSpeechInput.setText("Je hebt " + countKeyWords(keyWordsList, keyWords.size(), result).keySet() + "\n " + countKeyWords(keyWordsList, keyWords.size(),result).values());
+
+                    //txtSpeechInput.setText("Je hebt " + countWords(result) + " woorden gesproken" + " \n In " + seconds + " seconden"
+                    //+ "\n\n Het meest voorkomende woord is " + countMostRepeated(list).getKey() + " met " + countMostRepeated(list).getValue() + " keer");
                 }
                 break;
             }
@@ -110,6 +115,9 @@ public class MainActivity extends Activity {
     }
 
     public void openTextView(View v){
+        //Retrieve keywords from addkeyword screen
+        //List<String> keyWordsList = new ArrayList<String>(keyWords);
+        //Log.v("Value:", keyWordsList.get(0));
         Intent intent = new Intent(getApplicationContext(), ShowText.class);
         intent.putExtra("SpokenText", result);
         startActivity(intent);

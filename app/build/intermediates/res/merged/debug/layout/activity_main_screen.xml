@@ -12,29 +12,7 @@
     tools:context="com.example.maickel.speechy.MainScreen">
 
     <Button
-        android:text="Statistieken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/openStatistics"
-        android:background="@drawable/buttonshape"
-        android:layout_marginTop="46dp"
-        android:layout_below="@+id/addKeywords"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Opties"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:id="@+id/addKeywords"
-        android:background="@drawable/buttonshape"
-        android:onClick="openOptionScreen"
-        android:layout_below="@+id/startButton"
-        android:layout_alignLeft="@+id/openStatistics"
-        android:layout_alignStart="@+id/openStatistics" />
-
-    <Button
-        android:text="Start Spraakherkenning"
+        android:text="Presenteer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
@@ -44,4 +22,39 @@
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/addKeywords"
         android:layout_alignStart="@+id/addKeywords" />
+
+    <Button
+        android:text="Opnames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recordButton"
+        android:background="@drawable/buttonshape"
+        android:layout_below="@+id/startButton"
+        android:layout_alignLeft="@+id/startButton"
+        android:layout_alignStart="@+id/startButton"
+        android:layout_marginTop="34dp"
+        android:layout_alignRight="@+id/startButton"
+        android:layout_alignEnd="@+id/startButton" />
+
+    <Button
+        android:text="Analyse Resultaten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/openStatistics"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/addKeywords"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Opties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addKeywords"
+        android:background="@drawable/buttonshape"
+        android:onClick="openOptionScreen"
+        android:layout_below="@+id/recordButton"
+        android:layout_alignLeft="@+id/openStatistics"
+        android:layout_alignStart="@+id/openStatistics"
+        android:layout_marginTop="36dp" />
 </RelativeLayout>

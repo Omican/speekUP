@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
-        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main_screen.xml",
-        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\menu\\main_screen.xml"
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_screen_drawer.xml",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\menu\\activity_main_screen_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_screen_drawer.xml",
-        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\menu\\activity_main_screen_drawer.xml"
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main_screen.xml",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\menu\\main_screen.xml"
     }
 ]
