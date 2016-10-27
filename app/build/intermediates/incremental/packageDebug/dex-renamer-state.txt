@@ -1,4 +1,4 @@
-#Wed Oct 26 12:16:03 CEST 2016
+#Thu Oct 27 12:58:17 CEST 2016
 base.0=C\:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a70a39481704794da86e40b5205545517865f7ae
 renamed.1=classes2.dex
 renamed.0=classes.dex

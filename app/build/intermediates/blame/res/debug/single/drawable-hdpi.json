@@ -1,6 +1,18 @@
 [
     {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_poll_black_24dp.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_poll_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_keyboard_voice_black_24dp.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_keyboard_voice_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_mic.png",
         "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-hdpi\\ic_mic.png"
+    },
+    {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_flag_black_24dp.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_flag_black_24dp.png"
     }
 ]

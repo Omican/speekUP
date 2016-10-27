@@ -11,14 +11,176 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.maickel.speechy.Options">
 
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_height="100dp"
+        android:background="#ffff"
+        android:elevation="0dp"
+        android:layout_width="350dp"
+        android:layout_below="@+id/presentationMode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="Presentatie tijd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:id="@+id/presentationTime"
+        android:layout_alignBottom="@+id/textureView"
+        android:layout_alignLeft="@+id/presentationAlerts"
+        android:layout_alignStart="@+id/presentationAlerts"
+        android:layout_marginBottom="7dp" />
+
+    <TextureView
+        android:id="@+id/textureView3"
+        android:layout_height="100dp"
+        android:background="#ffff"
+        android:elevation="0dp"
+        android:layout_width="350dp"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/textureView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Presentatie Modus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/presentationMode"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/settings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Training Modus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/trainingMode"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/textureView"
+        android:layout_alignLeft="@+id/presentationTime"
+        android:layout_alignStart="@+id/presentationTime" />
+
+    <TextView
+        android:text="Meldingen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/presentationAlerts"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/presentationTimeEdit"
+        android:layout_alignLeft="@+id/presentationMode"
+        android:layout_alignStart="@+id/presentationMode" />
+
+    <TextView
+        android:text="Presentatie Tijd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/textureView3"
+        android:layout_alignLeft="@+id/trainingModeAlerts"
+        android:layout_alignStart="@+id/trainingModeAlerts"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/trainingTime" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:textSize="16dp"
+        android:id="@+id/trainingEnterTime"
+        android:layout_alignBottom="@+id/trainingTime"
+        android:layout_alignLeft="@+id/presentationTimeEdit"
+        android:layout_alignStart="@+id/presentationTimeEdit" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/presentationTimeEdit"
+        android:textSize="16dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_alignBottom="@+id/presentationTime"
+        android:layout_toRightOf="@+id/settings"
+        android:layout_toEndOf="@+id/settings" />
+
+    <TextView
+        android:text="Instellingen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:id="@+id/settings"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Meldingen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:id="@+id/trainingModeAlerts"
+        android:layout_above="@+id/trainingEnterTime"
+        android:layout_alignLeft="@+id/trainingMode"
+        android:layout_alignStart="@+id/trainingMode"
+        android:layout_marginBottom="7dp" />
+
+    <Switch
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/trainingSwitch"
+        android:switchMinWidth="70dp"
+        android:layout_alignBaseline="@+id/trainingModeAlerts"
+        android:layout_alignBottom="@+id/trainingModeAlerts"
+        android:layout_alignLeft="@+id/trainingEnterTime"
+        android:layout_alignStart="@+id/trainingEnterTime" />
+
+    <Switch
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/togglePresentationAlerts"
+        android:switchMinWidth="70dp"
+        android:layout_alignTop="@+id/presentationAlerts"
+        android:layout_alignLeft="@+id/presentationTimeEdit"
+        android:layout_alignStart="@+id/presentationTimeEdit" />
+
+    <Button
+        android:text="Opslaan"
+        android:layout_width="wrap_content"
+        android:background="@drawable/buttonsmall"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/saveButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/addKeywordButton"
+        android:layout_alignStart="@+id/addKeywordButton" />
+
     <Button
         android:text="Voeg Keywords Toe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
-        android:id="@+id/button2"
-        android:background="@drawable/buttonshape"
+        android:id="@+id/addKeywordButton"
+        android:background="@drawable/buttonsmall"
         android:onClick="addKeywordScreen"
-        android:layout_alignParentTop="true"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/saveButton"
         android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>

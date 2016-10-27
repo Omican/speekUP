@@ -97,7 +97,7 @@
         android:background="@drawable/buttonsmall"
         android:onClick="clearText"
         android:layout_width="wrap_content"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="15dp"
         android:layout_below="@+id/keyWord4"
         android:layout_alignLeft="@+id/saveButon"
         android:layout_alignStart="@+id/saveButon" />

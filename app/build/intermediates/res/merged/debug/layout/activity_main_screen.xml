@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main_screen"
     android:layout_width="match_parent"
@@ -12,22 +13,13 @@
     tools:context="com.example.maickel.speechy.MainScreen">
 
     <Button
-        android:text="Presenteer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:id="@+id/startButton"
-        android:background="@drawable/buttonshape"
-        android:onClick="openTextRecognition"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/addKeywords"
-        android:layout_alignStart="@+id/addKeywords" />
-
-    <Button
         android:text="Opnames"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/recordButton"
+        android:drawableLeft="@drawable/ic_flag_black_24dp"
+        android:paddingLeft="30dp"
+        android:drawablePadding="-55dp"
         android:background="@drawable/buttonshape"
         android:layout_below="@+id/startButton"
         android:layout_alignLeft="@+id/startButton"
@@ -41,20 +33,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/openStatistics"
+        android:drawableLeft="@drawable/ic_poll_black_24dp"
+        android:paddingLeft="30dp"
+        android:drawablePadding="-20dp"
         android:background="@drawable/buttonshape"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/addKeywords"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Opties"
+        android:text="Presenteer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:id="@+id/startButton"
+        android:drawableLeft="@drawable/ic_keyboard_voice_black_24dp"
+        android:paddingLeft="30dp"
+        android:drawablePadding="-50dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="openTextRecognition"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/addKeywords"
+        android:layout_alignStart="@+id/addKeywords" />
+
+    <Button
+        android:text="Instellingen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_menu_manage"
+        android:drawablePadding="-50dp"
+        android:paddingLeft="30dp"
         android:id="@+id/addKeywords"
         android:background="@drawable/buttonshape"
         android:onClick="openOptionScreen"
+        android:layout_marginTop="38dp"
         android:layout_below="@+id/recordButton"
         android:layout_alignLeft="@+id/openStatistics"
-        android:layout_alignStart="@+id/openStatistics"
-        android:layout_marginTop="36dp" />
+        android:layout_alignStart="@+id/openStatistics" />
+
 </RelativeLayout>
