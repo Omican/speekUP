@@ -14,7 +14,7 @@
     <TextureView
         android:id="@+id/textureView"
         android:layout_height="100dp"
-        android:background="#ffff"
+        android:background="#000000"
         android:elevation="0dp"
         android:layout_width="350dp"
         android:layout_below="@+id/presentationMode"
@@ -144,7 +144,7 @@
     <Switch
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:id="@+id/trainingSwitch"
+        android:id="@+id/toggleTrainingAlerts"
         android:switchMinWidth="70dp"
         android:layout_alignBaseline="@+id/trainingModeAlerts"
         android:layout_alignBottom="@+id/trainingModeAlerts"
@@ -166,7 +166,8 @@
         android:background="@drawable/buttonsmall"
         android:layout_height="wrap_content"
         android:layout_marginBottom="11dp"
-        android:id="@+id/saveButton"
+        android:id="@+id/saveOptionsButton"
+        android:onClick="saveOptions"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/addKeywordButton"
         android:layout_alignStart="@+id/addKeywordButton" />
@@ -179,7 +180,7 @@
         android:background="@drawable/buttonsmall"
         android:onClick="addKeywordScreen"
         android:layout_marginBottom="11dp"
-        android:layout_above="@+id/saveButton"
+        android:layout_above="@+id/saveOptionsButton"
         android:layout_centerHorizontal="true" />
 
 

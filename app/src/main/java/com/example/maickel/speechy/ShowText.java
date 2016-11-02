@@ -20,7 +20,13 @@ public class ShowText extends AppCompatActivity {
 
         ArrayList<String> result = extras.getStringArrayList("SpokenText");
 
-        showSpokenText.setText(result.get(0));
+        String temp = "";
+
+        for(int i = 0; i < result.size(); i++){
+            temp += result.get(i) + " ";
+        }
+
+        showSpokenText.setText(temp);
     }
 
 
