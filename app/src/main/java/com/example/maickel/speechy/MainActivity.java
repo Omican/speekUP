@@ -21,6 +21,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.speech.RecognitionService;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -40,7 +41,6 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends Activity{
 
-    private final int REQ_CODE_SPEECH_INPUT = 100;
     private SpeechRecognizer mSpeechRecognizer = null;
     private Intent mSpeechRecognizerIntent;
     private TextView txtSpeechInput;
@@ -50,6 +50,7 @@ public class MainActivity extends Activity{
     private ArrayList<String> tempResult;
     private Set<String> keyWords;
     private TextView spokenWords;
+    private TextView micText;
     private TextView timeElapsed;
     private TextView mostRepeated;
     private TextView spokenWordsTitle;
@@ -124,7 +125,7 @@ public class MainActivity extends Activity{
 
             @Override
             public void onPartialResults(Bundle partialResults) {
-
+                Log.i(LOG_TAG, "partialResults");
             }
 
             @Override
@@ -137,9 +138,11 @@ public class MainActivity extends Activity{
         mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, this.getPackageName());
         mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_WEB_SEARCH);
         mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3);
+        mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, new Long(100));
+        mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true);
 
+        micText = (TextView) findViewById(R.id.micText);
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
-        //btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
         spokenWords = (TextView) findViewById(R.id.spokenWords);
         timeElapsed = (TextView) findViewById(R.id.elapsedTime);
         mostRepeated = (TextView) findViewById(R.id.mostRepeated);
@@ -166,21 +169,26 @@ public class MainActivity extends Activity{
                                          boolean isChecked) {
                 if (isChecked) {
                     hideTextViews();
+                    micText.setVisibility(View.INVISIBLE);
                     result.clear();
                     startTime = System.currentTimeMillis();
                     mSpeechRecognizer.startListening(mSpeechRecognizerIntent);
                     speechProgress.setVisibility(View.VISIBLE);
                     speechProgress.setIndeterminate(true);
                 } else {
-                    if (result.size() != 0) {
-                        spokenWords.setText(" " + countWords(result));
-                        timeElapsed.setText(" " + seconds + " seconden");
-                        mostRepeated.setText("" + countMostRepeated(result).getKey() + "(" + countMostRepeated(result).getValue() + ")");
-                    }
+                    micText.setVisibility(View.VISIBLE);
                     speechProgress.setIndeterminate(false);
                     speechProgress.setVisibility(View.INVISIBLE);
                     mSpeechRecognizer.stopListening();
-                    showTextView();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            showResults(seconds, result);
+                            showTextView();
+                        }
+                    },1000
+                    );
+
                 }
             }
         });
@@ -193,20 +201,26 @@ public class MainActivity extends Activity{
         startActivity(intent);
     }
 
-    public Map<String, Integer> countKeyWords(ArrayList<String> keyWords, Integer wordAmount, ArrayList<String> result){
+    public StringBuilder countKeyWords(Set<String> keyWords, Integer wordAmount, ArrayList<String> result){
         Map<String, Integer> keyWordCount = new HashMap<>();
+        StringBuilder temp = new StringBuilder();
+        List<String> list = new ArrayList<>(keyWords);
 
         for(int y = 0; y < keyWords.size(); y++){
             int inputAmount = 0;
             for(int x = 0; x < wordAmount; x++) {
-                String[] words = result.get(0).split(" ");
-                if (words[x].equals(keyWords.get(y))) {
+               //String[] words = result.get(0).split(" ");
+                if (list.get(y).equals(result.get(x))) {
                     inputAmount++;
                 }
-                keyWordCount.put(keyWords.get(y), inputAmount);
             }
+            keyWordCount.put(list.get(y), inputAmount);
         }
-        return keyWordCount;
+
+        for(Map.Entry<String, Integer> entry : keyWordCount.entrySet()){
+            temp.append(entry.getKey() + "(" + entry.getValue() + ")" + System.lineSeparator());
+        }
+        return temp;
     }
 
     public Map.Entry<String, Integer> countMostRepeated(ArrayList<String> list){
@@ -245,12 +259,12 @@ public class MainActivity extends Activity{
     }
 
     public void hideTextViews(){
-        spokenWords.setVisibility(View.GONE);
-        spokenWordsTitle.setVisibility(View.GONE);
-        timeElapsed.setVisibility(View.GONE);
-        timeElapsedTitle.setVisibility(View.GONE);
-        mostRepeated.setVisibility(View.GONE);
-        mostRepeatedTitle.setVisibility(View.GONE);
+        spokenWords.setVisibility(View.INVISIBLE);
+        spokenWordsTitle.setVisibility(View.INVISIBLE);
+        timeElapsed.setVisibility(View.INVISIBLE);
+        timeElapsedTitle.setVisibility(View.INVISIBLE);
+        mostRepeated.setVisibility(View.INVISIBLE);
+        mostRepeatedTitle.setVisibility(View.INVISIBLE);
     }
 
     public void showTextView(){
@@ -260,6 +274,15 @@ public class MainActivity extends Activity{
         timeElapsedTitle.setVisibility(View.VISIBLE);
         mostRepeated.setVisibility(View.VISIBLE);
         mostRepeatedTitle.setVisibility(View.VISIBLE);
+    }
+
+    public void showResults(double seconds, ArrayList<String> result){
+        if (result.size() > 0) {
+            spokenWords.setText(String.format(Integer.toString(countWords(result))));
+            timeElapsed.setText(String.format(Double.toString(seconds) + " seconden"));
+            mostRepeated.setText(String.format(countKeyWords(keyWords, countWords(result), result).toString()));
+            //mostRepeated.setText(String.format(countMostRepeated(result).getKey() + "(" + Integer.toString(countMostRepeated(result).getValue()) + ")"));
+        }
     }
 
 

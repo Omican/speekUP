@@ -52,27 +52,27 @@ public class addKeyWords extends AppCompatActivity {
                 keyWord3.setText(keyWordsList.get(i));
             }
             if(i == 4){
-                keyWord4.setText(keyWordsList.get(4));
+                keyWord4.setText(keyWordsList.get(i));
             }
         }
     }
 
     public void saveKeywords (View v){
         keyWords = new ArrayList<>();
-        if(keyWord0 != null) {
-            keyWords.add(keyWord0.getText().toString());
+        if(!keyWord0.getText().toString().matches("")) {
+            keyWords.add(keyWord0.getText().toString().replaceAll("\\s+",""));
         }
-        if(keyWord1 != null) {
-            keyWords.add(keyWord1.getText().toString());
+        if(!keyWord1.getText().toString().matches("")) {
+            keyWords.add(keyWord1.getText().toString().replaceAll("\\s+",""));
         }
-        if(keyWord2 != null) {
-            keyWords.add(keyWord2.getText().toString());
+        if(!keyWord2.getText().toString().matches("")) {
+            keyWords.add(keyWord2.getText().toString().replaceAll("\\s+",""));
         }
-        if(keyWord3 != null) {
-            keyWords.add(keyWord3.getText().toString());
+        if(!keyWord3.getText().toString().matches("")) {
+            keyWords.add(keyWord3.getText().toString().replaceAll("\\s+",""));
         }
-        if(keyWord4 != null) {
-            keyWords.add(keyWord4.getText().toString());
+        if(!keyWord4.getText().toString().matches("")) {
+            keyWords.add(keyWord4.getText().toString().replaceAll("\\s+",""));
         }
         Set keyWordsSet = new HashSet(keyWords);
         SharedPreferences prefs = getSharedPreferences("my_prefs", MODE_PRIVATE);

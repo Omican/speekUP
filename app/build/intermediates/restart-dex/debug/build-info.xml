@@ -5,32 +5,32 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="194132120713648"
-    token="-4468284817517687232"
+    timestamp="9604655610592"
+    token="-1507090064404827118"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="240" />
+        duration="182" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="32" />
+        duration="30" />
     <task
         name="verifier"
-        duration="8" />
+        duration="1" />
 
     <artifact
-        location="C:\Users\Maickel\Documents\speekUP\app\build\outputs\apk\app-debug.apk"
+        location="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="194132120713648"
+        timestamp="9604655610592"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Maickel\Documents\speekUP\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 
