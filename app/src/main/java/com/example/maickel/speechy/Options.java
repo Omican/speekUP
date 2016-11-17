@@ -2,11 +2,13 @@ package com.example.maickel.speechy;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
@@ -20,6 +22,14 @@ public class Options extends AppCompatActivity {
     private int practiceTimeValue;
     private Boolean presentationAlertsValue;
     private Boolean practiceAlertsValue;
+    private Boolean presentationKeywordsRadioValue;
+    private Boolean presentationMostSpokenRadioValue;
+    private Boolean practiceKeyswordsRadioValue;
+    private Boolean practiceMostSpokenRadioValue;
+    private RadioButton presentationKeywordsRadio;
+    private RadioButton presentationMostSpokenRadio;
+    private RadioButton practiceKeywordsRadio;
+    private RadioButton practiceMostSpokenRadio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +41,10 @@ public class Options extends AppCompatActivity {
         presentationTime = (EditText) findViewById(R.id.presentationTimeEdit);
         practiceTime = (EditText) findViewById(R.id.trainingEnterTime);
         saveButton = (Button) findViewById(R.id.saveOptionsButton);
+        presentationKeywordsRadio = (RadioButton) findViewById(R.id.presentationShowKeywordRadio);
+        presentationMostSpokenRadio = (RadioButton) findViewById(R.id.presentationShowMostRepeatedWordsRadio);
+        practiceKeywordsRadio = (RadioButton) findViewById(R.id.practiceKeywordRadio);
+        practiceMostSpokenRadio = (RadioButton) findViewById(R.id.practiceMostSpokenWordsRadio);
 
         SharedPreferences prefs = getSharedPreferences("my_prefs", 0);
         if(prefs.contains("presentationTime")) {
@@ -49,6 +63,22 @@ public class Options extends AppCompatActivity {
             practiceAlertsValue = prefs.getBoolean("practiceAlerts", false);
             practiceAlerts.setChecked(practiceAlertsValue);
         }
+        if(prefs.contains("presentationKeywords")){
+            presentationKeywordsRadioValue = prefs.getBoolean("presentationKeywords", false);
+            presentationKeywordsRadio.setChecked(presentationKeywordsRadioValue);
+        }
+        if(prefs.contains("presentationMostSpokenWords")){
+            presentationMostSpokenRadioValue = prefs.getBoolean("presentationMostSpokenWords", false);
+            presentationMostSpokenRadio.setChecked(presentationMostSpokenRadioValue);
+        }
+        if(prefs.contains("practiceKeywords")){
+            practiceKeyswordsRadioValue = prefs.getBoolean("practiceKeywords", false);
+            practiceKeywordsRadio.setChecked(practiceKeyswordsRadioValue);
+        }
+        if(prefs.contains("practiceMostSpokenWords")){
+            practiceMostSpokenRadioValue = prefs.getBoolean("practiceMostSpokenWords", false);
+            practiceMostSpokenRadio.setChecked(practiceMostSpokenRadioValue);
+        }
     }
 
     public void addKeywordScreen(View v){
@@ -59,6 +89,10 @@ public class Options extends AppCompatActivity {
     public void saveOptions(View v){
         SharedPreferences prefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
+        edit.putBoolean("presentationShowKeywords", presentationKeywordsRadio.isChecked());
+        edit.putBoolean("presentationMostSpokenWords", presentationMostSpokenRadio.isChecked());
+        edit.putBoolean("practiceShowKeywords", practiceKeywordsRadio.isChecked());
+        edit.putBoolean("practiceMostSpokenWords", practiceMostSpokenRadio.isChecked());
         edit.putBoolean("presentationAlerts", presentationAlerts.isChecked());
         edit.putBoolean("practiceAlerts", practiceAlerts.isChecked());
         if(!presentationTime.getText().toString().equals("")) {

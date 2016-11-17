@@ -1,6 +1,7 @@
 package com.example.maickel.speechy;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ public class MainScreen extends AppCompatActivity {
     }
 
     public void openTextRecognition(View v){
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), choosePresentationMode.class);
         startActivity(intent);
     }
 

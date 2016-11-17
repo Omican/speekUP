@@ -45,6 +45,7 @@ public class MainActivity extends Activity{
     private Intent mSpeechRecognizerIntent;
     private TextView txtSpeechInput;
     private ImageButton btnSpeak;
+    private Button showTextView;
     private long startTime;
     private ArrayList<String> result = new ArrayList<>();
     private ArrayList<String> tempResult;
@@ -56,10 +57,11 @@ public class MainActivity extends Activity{
     private TextView spokenWordsTitle;
     private TextView timeElapsedTitle;
     private TextView mostRepeatedTitle;
-    private Boolean presentationAlerts;
-    private Boolean practiceAlerts;
-    private int presentationTime;
-    private int practiceTime;
+    private Boolean showKeyWords;
+    private Boolean showMostSpokenWords;
+    private Boolean enableAlerts;
+    private int timeLimit;
+    private String selectedMode;
     private String[] list;
     private double seconds;
     private ToggleButton startSpeech;
@@ -151,13 +153,23 @@ public class MainActivity extends Activity{
         mostRepeatedTitle = (TextView) findViewById(R.id.mostRepeatedTitle);
         startSpeech = (ToggleButton) findViewById(R.id.toggleButton);
         speechProgress = (ProgressBar) findViewById(R.id.progressBar);
+        showTextView = (Button) findViewById(R.id.openTextScreen);
 
         SharedPreferences prefs = getSharedPreferences("my_prefs", 0);
         keyWords = prefs.getStringSet("KeyWords", new HashSet<String>());
-        presentationAlerts = prefs.getBoolean("presentationAlerts", false);
-        practiceAlerts = prefs.getBoolean("practiceAlerts", false);
-        presentationTime = prefs.getInt("presentationTime", 0);
-        practiceTime = prefs.getInt("practiceTime", 0);
+        selectedMode = prefs.getString("presentationMode", "");
+        if(selectedMode.equals("presentationMode")){
+            enableAlerts = prefs.getBoolean("presentationAlerts", false);
+            timeLimit = prefs.getInt("presentationTime", 0);
+            showKeyWords = prefs.getBoolean("presentationKeywords", false);
+            showMostSpokenWords = prefs.getBoolean("presentationMostSpokenWords", false);
+        }
+        if(selectedMode.equals("practiceMode")){
+            enableAlerts = prefs.getBoolean("practiceAlerts", false);
+            timeLimit = prefs.getInt("practiceTime", 0);
+            showKeyWords = prefs.getBoolean("practiceKeywords", false);
+            showMostSpokenWords = prefs.getBoolean("practiceMostSpokenWords", false);
+        }
 
         speechProgress.setVisibility(View.INVISIBLE);
         hideTextViews();
@@ -218,7 +230,7 @@ public class MainActivity extends Activity{
         }
 
         for(Map.Entry<String, Integer> entry : keyWordCount.entrySet()){
-            temp.append(entry.getKey() + "(" + entry.getValue() + ")" + System.lineSeparator());
+            temp.append("-"+entry.getKey() + "(" + entry.getValue() + ")" + System.lineSeparator());
         }
         return temp;
     }
@@ -265,6 +277,7 @@ public class MainActivity extends Activity{
         timeElapsedTitle.setVisibility(View.INVISIBLE);
         mostRepeated.setVisibility(View.INVISIBLE);
         mostRepeatedTitle.setVisibility(View.INVISIBLE);
+        showTextView.setVisibility(View.INVISIBLE);
     }
 
     public void showTextView(){
@@ -274,14 +287,19 @@ public class MainActivity extends Activity{
         timeElapsedTitle.setVisibility(View.VISIBLE);
         mostRepeated.setVisibility(View.VISIBLE);
         mostRepeatedTitle.setVisibility(View.VISIBLE);
+        showTextView.setVisibility(View.VISIBLE);
     }
 
     public void showResults(double seconds, ArrayList<String> result){
         if (result.size() > 0) {
             spokenWords.setText(String.format(Integer.toString(countWords(result))));
             timeElapsed.setText(String.format(Double.toString(seconds) + " seconden"));
-            mostRepeated.setText(String.format(countKeyWords(keyWords, countWords(result), result).toString()));
-            //mostRepeated.setText(String.format(countMostRepeated(result).getKey() + "(" + Integer.toString(countMostRepeated(result).getValue()) + ")"));
+            if(showMostSpokenWords == true) {
+                mostRepeated.setText(String.format(countKeyWords(keyWords, countWords(result), result).toString()));
+            }
+            if(showKeyWords == true) {
+                mostRepeated.setText(String.format(countMostRepeated(result).getKey() + "(" + Integer.toString(countMostRepeated(result).getValue()) + ")"));
+            }
         }
     }
 

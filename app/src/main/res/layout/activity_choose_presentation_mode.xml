@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_presentation_mode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.maickel.speechy.choosePresentationMode">
+
+    <TextView
+        android:text="Kies een modus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/choosePresentationTitle"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="Presenteer Mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choosePresentationTitle"
+        android:background="@drawable/buttonshape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:id="@+id/presentationModeButon"
+        android:onClick="openPresentationMode"
+        android:textSize="14sp" />
+
+    <Button
+        android:text="Oefen mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="77dp"
+        android:id="@+id/practiceModeButton"
+        android:layout_below="@+id/presentationModeButon"
+        android:onClick="openPracticeMode"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
