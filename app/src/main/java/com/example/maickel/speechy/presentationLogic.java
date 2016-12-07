@@ -34,6 +34,23 @@ public class PresentationLogic {
         return temp;
     }
 
+    public Map countKeyWordsMap(Set<String> keyWords, Integer wordAmount, ArrayList<String> result){
+        Map<String, Integer> keyWordCount = new HashMap<>();
+        List<String> list = new ArrayList<>(keyWords);
+
+        for(int y = 0; y < keyWords.size(); y++){
+            int inputAmount = 0;
+            for(int x = 0; x < wordAmount; x++) {
+                if (list.get(y).equals(result.get(x))) {
+                    inputAmount++;
+                }
+            }
+            keyWordCount.put(list.get(y), inputAmount);
+        }
+
+        return keyWordCount;
+    }
+
     public Map.Entry<String, Integer> countMostRepeated(ArrayList<String> list){
         Map<String, Integer> stringsCount = new HashMap<>();
 

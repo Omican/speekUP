@@ -1,6 +1,11 @@
 package com.example.maickel.speechy;
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -63,6 +68,7 @@ public class MainActivity extends Activity{
     private long timeLimitInMills;
     private TextView countDownTimer;
     private CountDownTimer timer;
+    private Button savePresentation;
     //endregion
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -175,6 +181,7 @@ public class MainActivity extends Activity{
         showTextView = (Button) findViewById(R.id.openTextScreen);
         keywordsTitle = (TextView) findViewById(R.id.keywordsTitle);
         countDownTimer = (TextView) findViewById(R.id.countDownTimer);
+        savePresentation = (Button) findViewById(R.id.saveButon);
 
         getPreferences();
 
@@ -295,6 +302,15 @@ public class MainActivity extends Activity{
             showKeyWords = prefs.getBoolean("practiceShowKeywords", false);
             showMostSpokenWords = prefs.getBoolean("practiceMostSpokenWords", false);
         }
+    }
+
+    public void savePresentation() throws IOException {
+        File file = new File(getDir("data", MODE_PRIVATE), "keyWordsMap");
+        ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(file));
+        Map<String, Integer> keyWordMap = presentationLogic.countKeyWordsMap(keyWords, presentationLogic.countWords(result), result);
+        outputStream.writeObject(keyWordMap);
+        outputStream.flush();
+        outputStream.close();
     }
 
 

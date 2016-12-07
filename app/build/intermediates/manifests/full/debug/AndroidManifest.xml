@@ -12,6 +12,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -30,6 +34,7 @@
         <activity android:name="com.example.maickel.speechy.addKeyWords" />
         <activity android:name="com.example.maickel.speechy.Options" />
         <activity android:name="com.example.maickel.speechy.choosePresentationMode" />
+        <activity android:name="com.example.maickel.speechy.Analytics" />
     </application>
 
 </manifest>
