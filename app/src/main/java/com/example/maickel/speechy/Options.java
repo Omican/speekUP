@@ -64,7 +64,7 @@ public class Options extends AppCompatActivity {
             practiceAlerts.setChecked(practiceAlertsValue);
         }
         if(prefs.contains("presentationKeywords")){
-            presentationKeywordsRadioValue = prefs.getBoolean("presentationKeywords", false);
+            presentationKeywordsRadioValue = prefs.getBoolean("presentationShowKeywords", false);
             presentationKeywordsRadio.setChecked(presentationKeywordsRadioValue);
         }
         if(prefs.contains("presentationMostSpokenWords")){
@@ -72,7 +72,7 @@ public class Options extends AppCompatActivity {
             presentationMostSpokenRadio.setChecked(presentationMostSpokenRadioValue);
         }
         if(prefs.contains("practiceKeywords")){
-            practiceKeyswordsRadioValue = prefs.getBoolean("practiceKeywords", false);
+            practiceKeyswordsRadioValue = prefs.getBoolean("practiceShowKeywords", false);
             practiceKeywordsRadio.setChecked(practiceKeyswordsRadioValue);
         }
         if(prefs.contains("practiceMostSpokenWords")){

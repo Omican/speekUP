@@ -1,49 +1,41 @@
 package com.example.maickel.speechy;
 
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.Timer;
+import java.util.concurrent.TimeUnit;
 
-import android.Manifest;
 import android.app.Activity;
-import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
-import android.speech.RecognitionService;
+import android.os.Vibrator;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ToggleButton;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends Activity{
 
+    //region
     private SpeechRecognizer mSpeechRecognizer = null;
     private Intent mSpeechRecognizerIntent;
     private TextView txtSpeechInput;
+    private PresentationLogic presentationLogic;
     private ImageButton btnSpeak;
     private Button showTextView;
     private long startTime;
@@ -57,6 +49,7 @@ public class MainActivity extends Activity{
     private TextView spokenWordsTitle;
     private TextView timeElapsedTitle;
     private TextView mostRepeatedTitle;
+    private TextView keywordsTitle;
     private Boolean showKeyWords;
     private Boolean showMostSpokenWords;
     private Boolean enableAlerts;
@@ -67,11 +60,15 @@ public class MainActivity extends Activity{
     private ToggleButton startSpeech;
     private ProgressBar speechProgress;
     private String LOG_TAG = "VoiceRecognition";
-
+    private long timeLimitInMills;
+    private TextView countDownTimer;
+    private CountDownTimer timer;
+    //endregion
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        presentationLogic = new PresentationLogic();
 
         mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(getApplicationContext());
         mSpeechRecognizer.setRecognitionListener(new RecognitionListener() {
@@ -122,12 +119,34 @@ public class MainActivity extends Activity{
                     result.add(list[i]);
                 }
                 ArrayList<String> keyWordsList = new ArrayList<String>(keyWords);
-
             }
 
             @Override
             public void onPartialResults(Bundle partialResults) {
                 Log.i(LOG_TAG, "partialResults");
+
+                ArrayList<String>  partial = partialResults.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+                ArrayList<String> temp = new ArrayList<String>(keyWords);
+                if(enableAlerts) {
+                    for (int i = 0; i < temp.size(); i++) {
+                        if (partial.get(0).equals(temp.get(i))) {
+                            Vibrator v = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+                            v.vibrate(500);
+                        }
+                    }
+                }
+
+                partialResults.clear();
+                if(partial.size() > 0) {
+                    Log.i("Partial", partial.get(0).toString());
+                    if(partial.size() > 1) {
+                        Log.i("Partial 1", partial.get(1).toString());
+                    }
+                    if(partial.size() > 2) {
+                        Log.i("Partial 2", partial.get(2).toString());
+                    }
+                    partial.remove(0);
+                }
             }
 
             @Override
@@ -154,22 +173,12 @@ public class MainActivity extends Activity{
         startSpeech = (ToggleButton) findViewById(R.id.toggleButton);
         speechProgress = (ProgressBar) findViewById(R.id.progressBar);
         showTextView = (Button) findViewById(R.id.openTextScreen);
+        keywordsTitle = (TextView) findViewById(R.id.keywordsTitle);
+        countDownTimer = (TextView) findViewById(R.id.countDownTimer);
 
-        SharedPreferences prefs = getSharedPreferences("my_prefs", 0);
-        keyWords = prefs.getStringSet("KeyWords", new HashSet<String>());
-        selectedMode = prefs.getString("presentationMode", "");
-        if(selectedMode.equals("presentationMode")){
-            enableAlerts = prefs.getBoolean("presentationAlerts", false);
-            timeLimit = prefs.getInt("presentationTime", 0);
-            showKeyWords = prefs.getBoolean("presentationKeywords", false);
-            showMostSpokenWords = prefs.getBoolean("presentationMostSpokenWords", false);
-        }
-        if(selectedMode.equals("practiceMode")){
-            enableAlerts = prefs.getBoolean("practiceAlerts", false);
-            timeLimit = prefs.getInt("practiceTime", 0);
-            showKeyWords = prefs.getBoolean("practiceKeywords", false);
-            showMostSpokenWords = prefs.getBoolean("practiceMostSpokenWords", false);
-        }
+        getPreferences();
+
+        timeLimitInMills = timeLimit * 60000;
 
         speechProgress.setVisibility(View.INVISIBLE);
         hideTextViews();
@@ -178,7 +187,7 @@ public class MainActivity extends Activity{
 
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
+                                         final boolean isChecked) {
                 if (isChecked) {
                     hideTextViews();
                     micText.setVisibility(View.INVISIBLE);
@@ -187,7 +196,24 @@ public class MainActivity extends Activity{
                     mSpeechRecognizer.startListening(mSpeechRecognizerIntent);
                     speechProgress.setVisibility(View.VISIBLE);
                     speechProgress.setIndeterminate(true);
+                    countDownTimer.setVisibility(View.VISIBLE);
+                    timer = new CountDownTimer(timeLimitInMills, 1000){
+                        public void onTick(long millisUntilFinished){
+                            countDownTimer.setText("Resterende Tijd: " + presentationLogic.convertSecondsToMmSs(millisUntilFinished));
+                            if(millisUntilFinished > 59800 && millisUntilFinished < 61800){
+                                if(enableAlerts){
+                                    Vibrator v = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+                                    v.vibrate(500);
+                                    v.vibrate(500);
+                                }
+                            }
+                        }
+                        public void onFinish(){
+                            countDownTimer.setVisibility(View.INVISIBLE);
+                        }
+                    }.start();
                 } else {
+                    timer.cancel();
                     micText.setVisibility(View.VISIBLE);
                     speechProgress.setIndeterminate(false);
                     speechProgress.setVisibility(View.INVISIBLE);
@@ -206,100 +232,68 @@ public class MainActivity extends Activity{
         });
     }
 
-
     public void openTextView(View v){
         Intent intent = new Intent(getApplicationContext(), ShowText.class);
         intent.putExtra("SpokenText", result);
         startActivity(intent);
     }
 
-    public StringBuilder countKeyWords(Set<String> keyWords, Integer wordAmount, ArrayList<String> result){
-        Map<String, Integer> keyWordCount = new HashMap<>();
-        StringBuilder temp = new StringBuilder();
-        List<String> list = new ArrayList<>(keyWords);
-
-        for(int y = 0; y < keyWords.size(); y++){
-            int inputAmount = 0;
-            for(int x = 0; x < wordAmount; x++) {
-               //String[] words = result.get(0).split(" ");
-                if (list.get(y).equals(result.get(x))) {
-                    inputAmount++;
-                }
-            }
-            keyWordCount.put(list.get(y), inputAmount);
-        }
-
-        for(Map.Entry<String, Integer> entry : keyWordCount.entrySet()){
-            temp.append("-"+entry.getKey() + "(" + entry.getValue() + ")" + System.lineSeparator());
-        }
-        return temp;
-    }
-
-    public Map.Entry<String, Integer> countMostRepeated(ArrayList<String> list){
-        Map<String, Integer> stringsCount = new HashMap<>();
-
-        for(String s : list){
-            if(s != "de" && s!= "het" && s != "een" && s != "De" && s != "Het" && s != "Een" ) {
-                Integer c = stringsCount.get(s);
-                if (c == null) c = new Integer(0);
-                c++;
-                stringsCount.put(s, c);
-            }
-        }
-
-        Map.Entry<String, Integer> mostRepeated = null;
-
-        for(Map.Entry<String, Integer> e: stringsCount.entrySet()){
-            if(mostRepeated == null || mostRepeated.getValue() < e.getValue()){
-                mostRepeated = e;
-            }
-        }
-
-        return mostRepeated;
-    }
-
-    public Integer countWords (ArrayList<String> result){
-        ArrayList<String> tempArray = new ArrayList<>();
-        for(int i = 0; i < result.size(); i++){
-            String[] temp = result.get(i).split(" ");
-            for(int j = 0; j < temp.length; j++){
-                tempArray.add(temp[j]);
-            }
-        }
-        Integer wordAmount = tempArray.size();
-        return wordAmount;
-    }
-
     public void hideTextViews(){
         spokenWords.setVisibility(View.INVISIBLE);
         spokenWordsTitle.setVisibility(View.INVISIBLE);
+        keywordsTitle.setVisibility(View.INVISIBLE);
         timeElapsed.setVisibility(View.INVISIBLE);
         timeElapsedTitle.setVisibility(View.INVISIBLE);
         mostRepeated.setVisibility(View.INVISIBLE);
         mostRepeatedTitle.setVisibility(View.INVISIBLE);
         showTextView.setVisibility(View.INVISIBLE);
+        countDownTimer.setVisibility(View.INVISIBLE);
     }
 
     public void showTextView(){
+        if(showKeyWords == true) {
+            keywordsTitle.setVisibility(View.VISIBLE);
+        }
         spokenWords.setVisibility(View.VISIBLE);
         spokenWordsTitle.setVisibility(View.VISIBLE);
+        if(showMostSpokenWords) {
+            mostRepeatedTitle.setVisibility(View.VISIBLE);
+        }
         timeElapsed.setVisibility(View.VISIBLE);
         timeElapsedTitle.setVisibility(View.VISIBLE);
         mostRepeated.setVisibility(View.VISIBLE);
-        mostRepeatedTitle.setVisibility(View.VISIBLE);
         showTextView.setVisibility(View.VISIBLE);
+        countDownTimer.setVisibility(View.INVISIBLE);
     }
 
     public void showResults(double seconds, ArrayList<String> result){
         if (result.size() > 0) {
-            spokenWords.setText(String.format(Integer.toString(countWords(result))));
+            spokenWords.setText(String.format(Integer.toString(presentationLogic.countWords(result))));
             timeElapsed.setText(String.format(Double.toString(seconds) + " seconden"));
-            if(showMostSpokenWords == true) {
-                mostRepeated.setText(String.format(countKeyWords(keyWords, countWords(result), result).toString()));
+            if(showKeyWords) {
+                mostRepeated.setText(String.format(presentationLogic.countKeyWords(keyWords, presentationLogic.countWords(result), result).toString()));
             }
-            if(showKeyWords == true) {
-                mostRepeated.setText(String.format(countMostRepeated(result).getKey() + "(" + Integer.toString(countMostRepeated(result).getValue()) + ")"));
+            if(showMostSpokenWords) {
+                mostRepeated.setText(String.format(presentationLogic.countMostRepeated(result).getKey() + "(" + Integer.toString(presentationLogic.countMostRepeated(result).getValue()) + ")"));
             }
+        }
+    }
+
+    public void getPreferences(){
+        SharedPreferences prefs = getSharedPreferences("my_prefs", 0);
+        keyWords = prefs.getStringSet("KeyWords", new HashSet<String>());
+        selectedMode = prefs.getString("presentationMode", "");
+        if(selectedMode.equals("presentationMode")){
+            enableAlerts = prefs.getBoolean("presentationAlerts", false);
+            timeLimit = prefs.getInt("presentationTime", 0);
+            showKeyWords = prefs.getBoolean("presentationShowKeywords", false);
+            showMostSpokenWords = prefs.getBoolean("presentationMostSpokenWords", false);
+        }
+        if(selectedMode.equals("practiceMode")){
+            enableAlerts = prefs.getBoolean("practiceAlerts", false);
+            timeLimit = prefs.getInt("practiceTime", 0);
+            showKeyWords = prefs.getBoolean("practiceShowKeywords", false);
+            showMostSpokenWords = prefs.getBoolean("practiceMostSpokenWords", false);
         }
     }
 

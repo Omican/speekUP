@@ -20,6 +20,7 @@ public class choosePresentationMode extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
         edit.putString("presentationMode", "presentationMode");
+        edit.apply();
         startActivity(intent);
     }
 
@@ -28,6 +29,7 @@ public class choosePresentationMode extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
         edit.putString("presentationMode", "practiceMode");
+        edit.apply();
         startActivity(intent);
     }
 }
