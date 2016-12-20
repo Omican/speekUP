@@ -23,4 +23,9 @@ public class MainScreen extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), Options.class);
         startActivity(intent);
     }
+
+    public void openAnalysticsScreen(View v){
+        Intent intent = new Intent(getApplicationContext(), Analytics.class);
+        startActivity(intent);
+    }
 }

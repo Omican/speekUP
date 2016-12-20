@@ -82,7 +82,7 @@ MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Maick\AndroidSt
 		ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:19:9-43
 	android:theme
 		ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:22:9-40
-activity#com.example.maickel.speechy.MainActivity
+activity#com.example.maickel.speechy.Presentation
 ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:23:9-50
 	android:name
 		ADDED from C:\Users\Maick\AndroidStudioProjects\Speechy\app\src\main\AndroidManifest.xml:23:19-47

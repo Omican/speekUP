@@ -12,6 +12,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
@@ -19,7 +23,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.maickel.speechy.MainActivity" />
+        <activity android:name="com.example.maickel.speechy.Presentation" />
         <activity android:name="com.example.maickel.speechy.MainScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +35,7 @@
         <activity android:name="com.example.maickel.speechy.addKeyWords" />
         <activity android:name="com.example.maickel.speechy.Options" />
         <activity android:name="com.example.maickel.speechy.choosePresentationMode" />
+        <activity android:name="com.example.maickel.speechy.Analytics" />
     </application>
 
 </manifest>

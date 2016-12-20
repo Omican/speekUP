@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
     },
     {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_startrecord.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-mdpi\\ic_startrecord.png"
+    },
+    {
         "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_stoprecord.png",
         "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-mdpi\\ic_stoprecord.png"
     }

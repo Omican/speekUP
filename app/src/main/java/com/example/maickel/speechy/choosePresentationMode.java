@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class choosePresentationMode extends AppCompatActivity {
 
@@ -16,7 +15,7 @@ public class choosePresentationMode extends AppCompatActivity {
     }
 
     public void openPresentationMode(View v){
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Presentation.class);
         SharedPreferences prefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
         edit.putString("presentationMode", "presentationMode");
@@ -25,7 +24,7 @@ public class choosePresentationMode extends AppCompatActivity {
     }
 
     public void openPracticeMode(View v){
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Presentation.class);
         SharedPreferences prefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
         edit.putString("presentationMode", "practiceMode");

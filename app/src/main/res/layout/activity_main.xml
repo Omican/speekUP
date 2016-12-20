@@ -18,53 +18,16 @@
         android:textStyle="normal" />
 
 
-    <TextView
-        android:text="Gesproken Woorden"
+    <ToggleButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        android:layout_marginTop="14dp"
-        android:id="@+id/spokenWordsTitle" />
-
-    <TextView
-        android:text="Verlopen Tijd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/txtSpeechInput"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/timeElapsedTitle" />
-
-    <TextView
-        android:text="@string/showMostSpoken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/elapsedTime"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="9dp"
-        android:id="@+id/mostRepeatedTitle" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:id="@+id/elapsedTime"
-        android:textAlignment="center"
-        android:textSize="16dp"
-        android:paddingTop="20dp"
-        android:background="@drawable/textbackground"
-        android:layout_below="@+id/txtSpeechInput"
-        android:layout_alignLeft="@+id/spokenWords"
-        android:layout_alignStart="@+id/spokenWords" />
-
-    <TextView
-        android:text="Gesproken Keywords"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/mostRepeated"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/keywordsTitle" />
+        android:background="@drawable/check"
+        android:layout_height="80dp"
+        android:id="@+id/toggleButton"
+        android:textOn=" "
+        android:textOff=" "
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/timeElapsedTitle"
+        android:layout_marginBottom="26dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,8 +37,44 @@
         android:id="@+id/micText"
         android:textSize="15dp"
         android:textStyle="normal"
-        android:layout_marginBottom="11dp"
-        android:layout_above="@+id/openTextScreen"
+        android:layout_above="@+id/toggleButton"
+        android:layout_alignStart="@+id/keywordsTitle" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignTop="@+id/toggleButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Gesproken Woorden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/spokenWordsTitle"
+        android:layout_above="@+id/spokenWords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/countDownTimer"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/textbackground"
+        android:layout_below="@+id/timeElapsedTitle"
+        android:layout_alignStart="@+id/mostRepeated" />
+
+    <TextView
+        android:text="Verlopen Tijd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeElapsedTitle"
+        android:layout_below="@+id/spokenWords"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -86,9 +85,38 @@
         android:textAlignment="center"
         android:textSize="16dp"
         android:paddingTop="20dp"
-        android:layout_marginBottom="8dp"
-        android:layout_above="@+id/timeElapsedTitle"
-        android:layout_alignStart="@+id/openTextScreen" />
+        android:layout_alignBaseline="@+id/txtSpeechInput"
+        android:layout_alignBottom="@+id/txtSpeechInput"
+        android:layout_alignStart="@+id/elapsedTime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/elapsedTime"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/textbackground"
+        android:layout_below="@+id/timeElapsedTitle"
+        android:layout_alignStart="@+id/countDownTimer"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:text="@string/showMostSpoken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mostRepeatedTitle"
+        android:layout_below="@+id/elapsedTime"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Gesproken Keywords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/keywordsTitle"
+        android:layout_alignBaseline="@+id/mostRepeatedTitle"
+        android:layout_alignBottom="@+id/mostRepeatedTitle"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -98,61 +126,29 @@
         android:textAlignment="center"
         android:paddingTop="20dp"
         android:textSize="16dp"
-        android:layout_below="@+id/countDownTimer"
-        android:layout_alignStart="@+id/countDownTimer" />
-
-    <ProgressBar
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
-        android:layout_below="@+id/openTextScreen"
+        android:layout_below="@+id/mostRepeatedTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/countDownTimer"
-        android:textAlignment="center"
-        android:textSize="16dp"
-        android:paddingTop="20dp"
-        android:background="@drawable/textbackground"
-        android:layout_alignBaseline="@+id/mostRepeatedTitle"
-        android:layout_alignBottom="@+id/mostRepeatedTitle"
-        android:layout_alignStart="@+id/elapsedTime" />
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:background="@drawable/check"
-        android:layout_height="80dp"
-        android:id="@+id/toggleButton"
-        android:textOn=" "
-        android:textOff=" "
-        android:layout_alignTop="@+id/progressBar"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="13dp" />
 
     <Button
         android:text="Presentatie Opslaan"
+        android:textSize="10dp"
         android:onClick="savePresentation"
         android:background="@drawable/buttonshape"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/savePresentation"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/openTextScreen"
-        android:layout_marginBottom="7dp" />
+        android:layout_toEndOf="@+id/spokenWordsTitle" />
 
     <Button
-        android:text="Geef gesproken tekst weer"
+        android:text="Geef tekst weer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/openTextScreen"
         android:background="@drawable/buttonshape"
-        android:textSize="14dp"
+        android:textSize="10dp"
         android:onClick="openTextView"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/mostRepeated"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/micText" />
 </RelativeLayout>
