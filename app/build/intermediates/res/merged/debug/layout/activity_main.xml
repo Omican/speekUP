@@ -151,6 +151,4 @@
         android:onClick="openTextView"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/micText" />
-
-
 </RelativeLayout>
