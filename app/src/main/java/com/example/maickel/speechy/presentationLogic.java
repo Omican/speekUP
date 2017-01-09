@@ -10,8 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Maick on 12/7/2016.
  */
-
-public class PresentationLogic {
+class PresentationLogic {
 
     public StringBuilder countKeyWords(Set<String> keyWords, Integer wordAmount, ArrayList<String> result){
         Map<String, Integer> keyWordCount = new HashMap<>();

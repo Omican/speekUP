@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+        "outputFile": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
         "map": [
             {
                 "to": {
@@ -12,15 +12,7 @@
                     "endOffset": 351
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 19,
-                        "endLine": 7,
-                        "endColumn": 12,
-                        "endOffset": 320
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-v21\\styles.xml"
                 }
             },
             {
@@ -32,14 +24,7 @@
                     "endOffset": 442
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 90,
-                        "endOffset": 141
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -51,14 +36,7 @@
                     "endOffset": 545
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 146,
-                        "endColumn": 102,
-                        "endOffset": 244
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -70,14 +48,7 @@
                     "endOffset": 648
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 249,
-                        "endColumn": 102,
-                        "endOffset": 347
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -89,14 +60,7 @@
                     "endOffset": 753
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 352,
-                        "endColumn": 104,
-                        "endOffset": 452
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -108,14 +72,7 @@
                     "endOffset": 860
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 457,
-                        "endColumn": 106,
-                        "endOffset": 559
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -127,14 +84,7 @@
                     "endOffset": 969
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 564,
-                        "endColumn": 108,
-                        "endOffset": 668
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -146,14 +96,7 @@
                     "endOffset": 1078
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 673,
-                        "endColumn": 108,
-                        "endOffset": 777
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -165,14 +108,7 @@
                     "endOffset": 1187
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 782,
-                        "endColumn": 108,
-                        "endOffset": 886
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -184,14 +120,7 @@
                     "endOffset": 1296
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 891,
-                        "endColumn": 108,
-                        "endOffset": 995
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -203,14 +132,7 @@
                     "endOffset": 1405
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1000,
-                        "endColumn": 108,
-                        "endOffset": 1104
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -222,14 +144,7 @@
                     "endOffset": 1512
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1109,
-                        "endColumn": 106,
-                        "endOffset": 1211
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -241,14 +156,7 @@
                     "endOffset": 1615
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1216,
-                        "endColumn": 102,
-                        "endOffset": 1314
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -260,14 +168,7 @@
                     "endOffset": 1734
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1319,
-                        "endColumn": 118,
-                        "endOffset": 1433
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -280,15 +181,7 @@
                     "endOffset": 1889
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endLine": 16,
-                        "endColumn": 12,
-                        "endOffset": 1588
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -301,15 +194,7 @@
                     "endOffset": 2044
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1593,
-                        "endLine": 18,
-                        "endColumn": 12,
-                        "endOffset": 1743
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -321,14 +206,7 @@
                     "endOffset": 2149
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1748,
-                        "endColumn": 104,
-                        "endOffset": 1848
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -340,14 +218,7 @@
                     "endOffset": 2270
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1853,
-                        "endColumn": 120,
-                        "endOffset": 1969
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -359,14 +230,7 @@
                     "endOffset": 2371
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1974,
-                        "endColumn": 100,
-                        "endOffset": 2070
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -379,15 +243,7 @@
                     "endOffset": 2518
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2075,
-                        "endLine": 23,
-                        "endColumn": 12,
-                        "endOffset": 2217
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -400,15 +256,7 @@
                     "endOffset": 2659
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 2222,
-                        "endLine": 25,
-                        "endColumn": 12,
-                        "endOffset": 2358
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -420,14 +268,7 @@
                     "endOffset": 2762
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 2363,
-                        "endColumn": 102,
-                        "endOffset": 2461
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -439,14 +280,7 @@
                     "endOffset": 2881
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 2466,
-                        "endColumn": 118,
-                        "endOffset": 2580
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -458,14 +292,7 @@
                     "endOffset": 2988
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 2585,
-                        "endColumn": 106,
-                        "endOffset": 2687
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -477,14 +304,7 @@
                     "endOffset": 3091
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 2692,
-                        "endColumn": 102,
-                        "endOffset": 2790
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -497,15 +317,7 @@
                     "endOffset": 3246
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 2795,
-                        "endLine": 31,
-                        "endColumn": 12,
-                        "endOffset": 2945
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -518,15 +330,7 @@
                     "endOffset": 3417
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 2950,
-                        "endLine": 33,
-                        "endColumn": 12,
-                        "endOffset": 3116
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -539,15 +343,7 @@
                     "endOffset": 3566
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 34,
-                        "startColumn": 4,
-                        "startOffset": 3121,
-                        "endLine": 35,
-                        "endColumn": 12,
-                        "endOffset": 3265
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -560,15 +356,7 @@
                     "endOffset": 3731
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 3270,
-                        "endLine": 37,
-                        "endColumn": 12,
-                        "endOffset": 3430
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -581,15 +369,7 @@
                     "endOffset": 3888
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 3435,
-                        "endLine": 39,
-                        "endColumn": 12,
-                        "endOffset": 3587
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -602,15 +382,7 @@
                     "endOffset": 4039
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 40,
-                        "startColumn": 4,
-                        "startOffset": 3592,
-                        "endLine": 41,
-                        "endColumn": 12,
-                        "endOffset": 3738
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -622,14 +394,7 @@
                     "endOffset": 4158
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 42,
-                        "startColumn": 4,
-                        "startOffset": 3743,
-                        "endColumn": 118,
-                        "endOffset": 3857
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -642,15 +407,7 @@
                     "endOffset": 4530
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 43,
-                        "startColumn": 4,
-                        "startOffset": 3862,
-                        "endLine": 47,
-                        "endColumn": 12,
-                        "endOffset": 4229
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -663,15 +420,7 @@
                     "endOffset": 4679
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 48,
-                        "startColumn": 4,
-                        "startOffset": 4234,
-                        "endLine": 49,
-                        "endColumn": 12,
-                        "endOffset": 4378
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -684,15 +433,7 @@
                     "endOffset": 4828
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 4383,
-                        "endLine": 51,
-                        "endColumn": 12,
-                        "endOffset": 4527
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -704,14 +445,7 @@
                     "endOffset": 4940
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 52,
-                        "startColumn": 4,
-                        "startOffset": 4532,
-                        "endColumn": 111,
-                        "endOffset": 4639
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -723,14 +457,7 @@
                     "endOffset": 5087
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 53,
-                        "startColumn": 4,
-                        "startOffset": 4644,
-                        "endColumn": 146,
-                        "endOffset": 4786
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -743,15 +470,7 @@
                     "endOffset": 5240
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 4791,
-                        "endLine": 55,
-                        "endColumn": 12,
-                        "endOffset": 4939
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -764,15 +483,7 @@
                     "endOffset": 5387
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 56,
-                        "startColumn": 4,
-                        "startOffset": 4944,
-                        "endLine": 57,
-                        "endColumn": 12,
-                        "endOffset": 5086
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -784,14 +495,7 @@
                     "endOffset": 5462
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 58,
-                        "startColumn": 4,
-                        "startOffset": 5091,
-                        "endColumn": 74,
-                        "endOffset": 5161
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -803,14 +507,7 @@
                     "endOffset": 5551
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 59,
-                        "startColumn": 4,
-                        "startOffset": 5166,
-                        "endColumn": 88,
-                        "endOffset": 5250
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -822,14 +519,7 @@
                     "endOffset": 5638
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 60,
-                        "startColumn": 4,
-                        "startOffset": 5255,
-                        "endColumn": 86,
-                        "endOffset": 5337
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -841,14 +531,7 @@
                     "endOffset": 5739
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 61,
-                        "startColumn": 4,
-                        "startOffset": 5342,
-                        "endColumn": 100,
-                        "endOffset": 5438
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -860,14 +543,7 @@
                     "endOffset": 5842
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 62,
-                        "startColumn": 4,
-                        "startOffset": 5443,
-                        "endColumn": 102,
-                        "endOffset": 5541
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -877,908 +553,586 @@
                     "startOffset": 5847,
                     "endLine": 112,
                     "endColumn": 12,
-                    "endOffset": 8910
+                    "endOffset": 8694
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 5546,
-                        "endLine": 106,
-                        "endColumn": 12,
-                        "endOffset": 8609
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 8915,
+                    "startOffset": 8699,
                     "endLine": 115,
                     "endColumn": 12,
-                    "endOffset": 9096
+                    "endOffset": 8880
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 107,
-                        "startColumn": 4,
-                        "startOffset": 8614,
-                        "endLine": 109,
-                        "endColumn": 12,
-                        "endOffset": 8795
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 9101,
+                    "startOffset": 8885,
                     "endLine": 159,
                     "endColumn": 12,
-                    "endOffset": 12176
+                    "endOffset": 11744
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 110,
-                        "startColumn": 4,
-                        "startOffset": 8800,
-                        "endLine": 153,
-                        "endColumn": 12,
-                        "endOffset": 11875
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 12181,
+                    "startOffset": 11749,
                     "endLine": 162,
                     "endColumn": 12,
-                    "endOffset": 12374
+                    "endOffset": 11942
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 154,
-                        "startColumn": 4,
-                        "startOffset": 11880,
-                        "endLine": 156,
-                        "endColumn": 12,
-                        "endOffset": 12073
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 12379,
+                    "startOffset": 11947,
                     "endLine": 165,
                     "endColumn": 12,
-                    "endOffset": 12574
+                    "endOffset": 12142
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 157,
-                        "startColumn": 4,
-                        "startOffset": 12078,
-                        "endLine": 159,
-                        "endColumn": 12,
-                        "endOffset": 12273
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 12579,
+                    "startOffset": 12147,
                     "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 12697
+                    "endOffset": 12265
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 160,
-                        "startColumn": 4,
-                        "startOffset": 12278,
-                        "endLine": 161,
-                        "endColumn": 12,
-                        "endOffset": 12396
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 12702,
+                    "startOffset": 12270,
                     "endLine": 169,
                     "endColumn": 12,
-                    "endOffset": 12820
+                    "endOffset": 12388
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 162,
-                        "startColumn": 4,
-                        "startOffset": 12401,
-                        "endLine": 163,
-                        "endColumn": 12,
-                        "endOffset": 12519
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 12825,
+                    "startOffset": 12393,
                     "endLine": 171,
                     "endColumn": 12,
-                    "endOffset": 12933
+                    "endOffset": 12501
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 164,
-                        "startColumn": 4,
-                        "startOffset": 12524,
-                        "endLine": 165,
-                        "endColumn": 12,
-                        "endOffset": 12632
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 12938,
+                    "startOffset": 12506,
                     "endLine": 174,
                     "endColumn": 12,
-                    "endOffset": 13116
+                    "endOffset": 12684
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 166,
-                        "startColumn": 4,
-                        "startOffset": 12637,
-                        "endLine": 168,
-                        "endColumn": 12,
-                        "endOffset": 12815
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 13121,
+                    "startOffset": 12689,
                     "endLine": 176,
                     "endColumn": 12,
-                    "endOffset": 13247
+                    "endOffset": 12815
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 169,
-                        "startColumn": 4,
-                        "startOffset": 12820,
-                        "endLine": 170,
-                        "endColumn": 12,
-                        "endOffset": 12946
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 13252,
+                    "startOffset": 12820,
                     "endLine": 179,
                     "endColumn": 12,
-                    "endOffset": 13448
+                    "endOffset": 13016
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 171,
-                        "startColumn": 4,
-                        "startOffset": 12951,
-                        "endLine": 173,
-                        "endColumn": 12,
-                        "endOffset": 13147
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 13453,
+                    "startOffset": 13021,
                     "endColumn": 88,
-                    "endOffset": 13537
+                    "endOffset": 13105
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 174,
-                        "startColumn": 4,
-                        "startOffset": 13152,
-                        "endColumn": 88,
-                        "endOffset": 13236
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13542,
+                    "startOffset": 13110,
                     "endColumn": 110,
-                    "endOffset": 13648
+                    "endOffset": 13216
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 175,
-                        "startColumn": 4,
-                        "startOffset": 13241,
-                        "endColumn": 110,
-                        "endOffset": 13347
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13653,
+                    "startOffset": 13221,
                     "endLine": 184,
                     "endColumn": 12,
-                    "endOffset": 13881
+                    "endOffset": 13449
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 176,
-                        "startColumn": 4,
-                        "startOffset": 13352,
-                        "endLine": 178,
-                        "endColumn": 12,
-                        "endOffset": 13580
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 13886,
+                    "startOffset": 13454,
                     "endColumn": 100,
-                    "endOffset": 13982
+                    "endOffset": 13550
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 179,
-                        "startColumn": 4,
-                        "startOffset": 13585,
-                        "endColumn": 100,
-                        "endOffset": 13681
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 13987,
+                    "startOffset": 13555,
                     "endColumn": 94,
-                    "endOffset": 14077
+                    "endOffset": 13645
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 180,
-                        "startColumn": 4,
-                        "startOffset": 13686,
-                        "endColumn": 94,
-                        "endOffset": 13776
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14082,
+                    "startOffset": 13650,
                     "endColumn": 122,
-                    "endOffset": 14200
+                    "endOffset": 13768
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 181,
-                        "startColumn": 4,
-                        "startOffset": 13781,
-                        "endColumn": 122,
-                        "endOffset": 13899
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 14205,
+                    "startOffset": 13773,
                     "endColumn": 128,
-                    "endOffset": 14329
+                    "endOffset": 13897
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 182,
-                        "startColumn": 4,
-                        "startOffset": 13904,
-                        "endColumn": 128,
-                        "endOffset": 14028
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 14334,
+                    "startOffset": 13902,
                     "endColumn": 116,
-                    "endOffset": 14446
+                    "endOffset": 14014
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 183,
-                        "startColumn": 4,
-                        "startOffset": 14033,
-                        "endColumn": 116,
-                        "endOffset": 14145
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14451,
+                    "startOffset": 14019,
                     "endLine": 192,
                     "endColumn": 12,
-                    "endOffset": 14623
+                    "endOffset": 14191
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 184,
-                        "startColumn": 4,
-                        "startOffset": 14150,
-                        "endLine": 186,
-                        "endColumn": 12,
-                        "endOffset": 14322
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14628,
+                    "startOffset": 14196,
                     "endColumn": 98,
-                    "endOffset": 14722
+                    "endOffset": 14290
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 187,
-                        "startColumn": 4,
-                        "startOffset": 14327,
-                        "endColumn": 98,
-                        "endOffset": 14421
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14727,
+                    "startOffset": 14295,
                     "endLine": 195,
                     "endColumn": 12,
-                    "endOffset": 14857
+                    "endOffset": 14425
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 188,
-                        "startColumn": 4,
-                        "startOffset": 14426,
-                        "endLine": 189,
-                        "endColumn": 12,
-                        "endOffset": 14556
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 14862,
+                    "startOffset": 14430,
                     "endLine": 197,
                     "endColumn": 12,
-                    "endOffset": 15000
+                    "endOffset": 14568
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 190,
-                        "startColumn": 4,
-                        "startOffset": 14561,
-                        "endLine": 191,
-                        "endColumn": 12,
-                        "endOffset": 14699
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 15005,
+                    "startOffset": 14573,
                     "endLine": 199,
                     "endColumn": 12,
-                    "endOffset": 15135
+                    "endOffset": 14703
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 192,
-                        "startColumn": 4,
-                        "startOffset": 14704,
-                        "endLine": 193,
-                        "endColumn": 12,
-                        "endOffset": 14834
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 15140,
+                    "startOffset": 14708,
                     "endLine": 201,
                     "endColumn": 12,
-                    "endOffset": 15254
+                    "endOffset": 14822
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 194,
-                        "startColumn": 4,
-                        "startOffset": 14839,
-                        "endLine": 195,
-                        "endColumn": 12,
-                        "endOffset": 14953
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15259,
+                    "startOffset": 14827,
                     "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 15455
+                    "endOffset": 15023
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 196,
-                        "startColumn": 4,
-                        "startOffset": 14958,
-                        "endLine": 199,
-                        "endColumn": 12,
-                        "endOffset": 15154
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15460,
+                    "startOffset": 15028,
                     "endLine": 207,
                     "endColumn": 12,
-                    "endOffset": 15574
+                    "endOffset": 15142
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 200,
-                        "startColumn": 4,
-                        "startOffset": 15159,
-                        "endLine": 201,
-                        "endColumn": 12,
-                        "endOffset": 15273
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 15579,
+                    "startOffset": 15147,
                     "endColumn": 92,
-                    "endOffset": 15667
+                    "endOffset": 15235
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 202,
-                        "startColumn": 4,
-                        "startOffset": 15278,
-                        "endColumn": 92,
-                        "endOffset": 15366
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 209,
                     "startColumn": 4,
-                    "startOffset": 15672,
+                    "startOffset": 15240,
                     "endColumn": 110,
-                    "endOffset": 15778
+                    "endOffset": 15346
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 203,
-                        "startColumn": 4,
-                        "startOffset": 15371,
-                        "endColumn": 110,
-                        "endOffset": 15477
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15783,
+                    "startOffset": 15351,
                     "endColumn": 55,
-                    "endOffset": 15834
+                    "endOffset": 15402
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 204,
-                        "startColumn": 4,
-                        "startOffset": 15482,
-                        "endColumn": 55,
-                        "endOffset": 15533
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 15839,
+                    "startOffset": 15407,
                     "endLine": 212,
                     "endColumn": 12,
-                    "endOffset": 15941
+                    "endOffset": 15509
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 205,
-                        "startColumn": 4,
-                        "startOffset": 15538,
-                        "endLine": 206,
-                        "endColumn": 12,
-                        "endOffset": 15640
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 15946,
+                    "startOffset": 15514,
                     "endLine": 216,
                     "endColumn": 12,
-                    "endOffset": 16136
+                    "endOffset": 15704
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 207,
-                        "startColumn": 4,
-                        "startOffset": 15645,
-                        "endLine": 210,
-                        "endColumn": 12,
-                        "endOffset": 15835
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 16141,
+                    "startOffset": 15709,
                     "endLine": 218,
                     "endColumn": 12,
-                    "endOffset": 16247
+                    "endOffset": 15815
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 211,
-                        "startColumn": 4,
-                        "startOffset": 15840,
-                        "endLine": 212,
-                        "endColumn": 12,
-                        "endOffset": 15946
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 16252,
+                    "startOffset": 15820,
                     "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 16380
+                    "endOffset": 15948
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 213,
-                        "startColumn": 4,
-                        "startOffset": 15951,
-                        "endLine": 214,
-                        "endColumn": 12,
-                        "endOffset": 16079
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16385,
+                    "startOffset": 15953,
                     "endColumn": 94,
-                    "endOffset": 16475
+                    "endOffset": 16043
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 215,
-                        "startColumn": 4,
-                        "startOffset": 16084,
-                        "endColumn": 94,
-                        "endOffset": 16174
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 222,
                     "startColumn": 4,
-                    "startOffset": 16480,
+                    "startOffset": 16048,
                     "endColumn": 90,
-                    "endOffset": 16566
+                    "endOffset": 16134
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 216,
-                        "startColumn": 4,
-                        "startOffset": 16179,
-                        "endColumn": 90,
-                        "endOffset": 16265
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 16571,
+                    "startOffset": 16139,
                     "endColumn": 90,
-                    "endOffset": 16657
+                    "endOffset": 16225
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 217,
-                        "startColumn": 4,
-                        "startOffset": 16270,
-                        "endColumn": 90,
-                        "endOffset": 16356
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 224,
                     "startColumn": 4,
-                    "startOffset": 16662,
+                    "startOffset": 16230,
                     "endColumn": 116,
-                    "endOffset": 16774
+                    "endOffset": 16342
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 218,
-                        "startColumn": 4,
-                        "startOffset": 16361,
-                        "endColumn": 116,
-                        "endOffset": 16473
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 16779,
+                    "startOffset": 16347,
                     "endLine": 226,
                     "endColumn": 12,
-                    "endOffset": 16913
+                    "endOffset": 16481
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 219,
-                        "startColumn": 4,
-                        "startOffset": 16478,
-                        "endLine": 220,
-                        "endColumn": 12,
-                        "endOffset": 16612
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 16918,
-                    "endLine": 236,
+                    "startOffset": 16486,
+                    "endLine": 233,
                     "endColumn": 12,
-                    "endOffset": 17426
+                    "endOffset": 16967
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "position": {
-                        "startLine": 221,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 16617,
-                        "endLine": 230,
+                        "startOffset": 328,
+                        "endLine": 15,
                         "endColumn": 12,
-                        "endOffset": 17125
+                        "endOffset": 815
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 237,
+                    "startLine": 234,
                     "startColumn": 4,
-                    "startOffset": 17431,
-                    "endLine": 246,
+                    "startOffset": 16972,
+                    "endLine": 243,
                     "endColumn": 12,
-                    "endOffset": 17951
+                    "endOffset": 17480
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 231,
-                        "startColumn": 4,
-                        "startOffset": 17130,
-                        "endLine": 240,
-                        "endColumn": 12,
-                        "endOffset": 17650
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 247,
+                    "startLine": 244,
                     "startColumn": 4,
-                    "startOffset": 17956,
-                    "endLine": 256,
+                    "startOffset": 17485,
+                    "endLine": 253,
                     "endColumn": 12,
-                    "endOffset": 18631
+                    "endOffset": 18005
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 241,
-                        "startColumn": 4,
-                        "startOffset": 17655,
-                        "endLine": 250,
-                        "endColumn": 12,
-                        "endOffset": 18330
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 257,
+                    "startLine": 254,
                     "startColumn": 4,
-                    "startOffset": 18636,
+                    "startOffset": 18010,
+                    "endLine": 263,
+                    "endColumn": 12,
+                    "endOffset": 18628
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 264,
+                    "startColumn": 4,
+                    "startOffset": 18633,
                     "endColumn": 56,
-                    "endOffset": 18688
+                    "endOffset": 18685
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 251,
-                        "startColumn": 4,
-                        "startOffset": 18335,
-                        "endColumn": 56,
-                        "endOffset": 18387
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 258,
+                    "startLine": 265,
                     "startColumn": 4,
-                    "startOffset": 18693,
+                    "startOffset": 18690,
                     "endColumn": 57,
-                    "endOffset": 18746
+                    "endOffset": 18743
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 252,
-                        "startColumn": 4,
-                        "startOffset": 18392,
-                        "endColumn": 57,
-                        "endOffset": 18445
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 259,
+                    "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 18751,
-                    "endLine": 261,
+                    "startOffset": 18748,
+                    "endLine": 268,
                     "endColumn": 12,
-                    "endOffset": 18940
+                    "endOffset": 18937
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 4,
-                        "endColumn": 12,
-                        "endOffset": 244
-                    }
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values-v21\\values-v21.xml"
                 }
             }
         ]

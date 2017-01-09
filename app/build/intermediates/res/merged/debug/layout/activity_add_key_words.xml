@@ -9,96 +9,93 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
     tools:context="com.example.maickel.speechy.addKeyWords">
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:id="@+id/keywordsCard">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Voeg maximaal 5 keywords toe"
+            android:textSize="16dp"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/keyWord0"
+            android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/keyWord0"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:id="@+id/keyWord1"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal"
+             />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/keyWord2"
-        android:layout_below="@+id/keyWord1"
-        android:layout_alignLeft="@+id/keyWord1"
-        android:layout_alignStart="@+id/keyWord1"
-        android:layout_marginTop="12dp" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:id="@+id/keyWord2"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center_horizontal" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/keyWord3"
-        android:layout_below="@+id/keyWord2"
-        android:layout_alignLeft="@+id/keyWord2"
-        android:layout_alignStart="@+id/keyWord2"
-        android:layout_marginTop="11dp" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:id="@+id/keyWord3"
+            android:layout_marginTop="180dp"
+            android:layout_gravity="center_horizontal" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/keyWord4"
-        android:layout_below="@+id/keyWord3"
-        android:layout_alignLeft="@+id/keyWord3"
-        android:layout_alignStart="@+id/keyWord3"
-        android:layout_marginTop="14dp" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:id="@+id/keyWord4"
+            android:layout_marginTop="230dp"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.CardView>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/keyWord1"
-        android:layout_marginTop="14dp"
-        android:layout_below="@+id/keyWord0"
-        android:layout_alignLeft="@+id/keyWord0"
-        android:layout_alignStart="@+id/keyWord0" />
-
-    <TextView
-        android:text="Add up to 5 keywords"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Opslaan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttonsmall"
-        android:id="@+id/saveButon"
-        android:onClick="saveKeywords"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
-
-    <Button
-        android:text="Leegmaken"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:background="@drawable/buttonsmall"
-        android:onClick="clearText"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/keyWord4"
-        android:layout_alignLeft="@+id/saveButon"
-        android:layout_alignStart="@+id/saveButon" />
+    <android.support.v7.widget.CardView
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:id="@+id/saveKeywordsCard"
+        android:layout_below="@id/keywordsCard"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Opslaan"
+            android:textSize="16dp"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:id="@+id/emptyKeywordsCard"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/saveKeywordsCard"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Leegmaken"
+            android:textSize="16dp"/>
+    </android.support.v7.widget.CardView>
 </RelativeLayout>

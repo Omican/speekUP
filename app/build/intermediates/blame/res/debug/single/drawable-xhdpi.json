@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_mic.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xhdpi\\ic_mic.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_mic.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\drawable-xhdpi\\ic_mic.png"
     },
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_stoprecord.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xhdpi\\ic_stoprecord.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_name.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_name.png"
     },
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_name.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_stoprecord.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\drawable-xhdpi\\ic_stoprecord.png"
     },
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_startrecord.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xhdpi\\ic_startrecord.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_startrecord.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\drawable-xhdpi\\ic_startrecord.png"
     }
 ]

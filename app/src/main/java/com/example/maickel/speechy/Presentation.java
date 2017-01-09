@@ -169,7 +169,7 @@ public class Presentation extends Activity{
         showTextView = (Button) findViewById(R.id.openTextScreen);
         keywordsTitle = (TextView) findViewById(R.id.keywordsTitle);
         countDownTimer = (TextView) findViewById(R.id.countDownTimer);
-        savePresentation = (Button) findViewById(R.id.saveButon);
+        savePresentation = (Button) findViewById(R.id.savePresentation);
 
         getPreferences();
 
