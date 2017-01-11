@@ -29,7 +29,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShowText" />
-        <activity android:name=".addKeyWords" />
         <activity android:name=".Options" />
         <activity android:name=".choosePresentationMode" />
         <activity android:name=".Analytics"></activity>

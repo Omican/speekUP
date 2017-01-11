@@ -94,19 +94,19 @@ public class KeywordFragment extends Fragment {
     public void saveKeywords (View v){
         keyWords = new ArrayList<>();
         if(!keyWord0.getText().toString().matches("")) {
-            keyWords.add(keyWord0.getText().toString().replaceAll("\\s+",""));
+            keyWords.add(keyWord0.getText().toString().replaceAll("\\s+","").toLowerCase());
         }
         if(!keyWord1.getText().toString().matches("")) {
-            keyWords.add(keyWord1.getText().toString().replaceAll("\\s+",""));
+            keyWords.add(keyWord1.getText().toString().replaceAll("\\s+","").toLowerCase());
         }
         if(!keyWord2.getText().toString().matches("")) {
-            keyWords.add(keyWord2.getText().toString().replaceAll("\\s+",""));
+            keyWords.add(keyWord2.getText().toString().replaceAll("\\s+","").toLowerCase());
         }
         if(!keyWord3.getText().toString().matches("")) {
-            keyWords.add(keyWord3.getText().toString().replaceAll("\\s+",""));
+            keyWords.add(keyWord3.getText().toString().replaceAll("\\s+","").toLowerCase());
         }
         if(!keyWord4.getText().toString().matches("")) {
-            keyWords.add(keyWord4.getText().toString().replaceAll("\\s+",""));
+            keyWords.add(keyWord4.getText().toString().replaceAll("\\s+","").toLowerCase());
         }
         Set keyWordsSet = new HashSet(keyWords);
         SharedPreferences prefs = getActivity().getSharedPreferences("my_prefs", Context.MODE_PRIVATE);
@@ -122,6 +122,7 @@ public class KeywordFragment extends Fragment {
         SharedPreferences.Editor edit = prefs.edit();
         edit.putStringSet("KeyWords", null);
         edit.apply();
+        startActivity(getActivity().getIntent());
     }
 
 }

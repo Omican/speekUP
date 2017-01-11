@@ -43,11 +43,6 @@ public class Options extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
     }
 
-    public void addKeywordScreen(View v){
-        Intent intent = new Intent(getApplicationContext(), addKeyWords.class);
-        startActivity(intent);
-    }
-
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new PresentationFragment(), "Presentatie");

@@ -28,7 +28,7 @@ class PresentationLogic {
         }
 
         for(Map.Entry<String, Integer> entry : keyWordCount.entrySet()){
-            temp.append("-"+entry.getKey() + "(" + entry.getValue() + ")" + System.lineSeparator());
+            temp.append("- "+entry.getKey() + "(" + entry.getValue() + ")" + System.lineSeparator());
         }
         return temp;
     }

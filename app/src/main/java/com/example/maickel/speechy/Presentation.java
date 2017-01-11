@@ -25,6 +25,7 @@ import android.os.Vibrator;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -42,19 +43,22 @@ public class Presentation extends Activity{
     private TextView txtSpeechInput;
     private PresentationLogic presentationLogic;
     private ImageButton btnSpeak;
+    private CardView showTextCard;
+    private CardView savePresentationCard;
     private Button showTextView;
     private long startTime;
     private ArrayList<String> result = new ArrayList<>();
     private ArrayList<String> tempResult;
     private Set<String> keyWords;
+    private CardView spokenWordsCard;
+    private CardView elapsedTimeCard;
+    private CardView mostSpokenCard;
+    private CardView countdownCard;
     private TextView spokenWords;
     private TextView micText;
     private TextView timeElapsed;
     private TextView mostRepeated;
-    private TextView spokenWordsTitle;
-    private TextView timeElapsedTitle;
     private TextView mostRepeatedTitle;
-    private TextView keywordsTitle;
     private Boolean showKeyWords;
     private Boolean showMostSpokenWords;
     private Boolean enableAlerts;
@@ -156,20 +160,35 @@ public class Presentation extends Activity{
         mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, new Long(100));
         mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true);
 
-        micText = (TextView) findViewById(R.id.micText);
-        txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
+        spokenWordsCard = (CardView) findViewById(R.id.spokenWordsCard);
+        elapsedTimeCard = (CardView) findViewById(R.id.elapsedTimeCard);
+        mostSpokenCard = (CardView) findViewById(R.id.mostSpokenCard);
+        countdownCard = (CardView) findViewById(R.id.countdownCard);
+        savePresentationCard = (CardView) findViewById(R.id.savePresentationButton);
+        showTextCard = (CardView) findViewById(R.id.openTextScreenButton);
+
+        savePresentationCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        showTextCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTextView(v);
+            }
+        });
+
         spokenWords = (TextView) findViewById(R.id.spokenWords);
         timeElapsed = (TextView) findViewById(R.id.elapsedTime);
         mostRepeated = (TextView) findViewById(R.id.mostRepeated);
-        spokenWordsTitle = (TextView) findViewById(R.id.spokenWordsTitle);
-        timeElapsedTitle = (TextView) findViewById(R.id.timeElapsedTitle);
         mostRepeatedTitle = (TextView) findViewById(R.id.mostRepeatedTitle);
+
+        micText = (TextView) findViewById(R.id.micText);
+        txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         startSpeech = (ToggleButton) findViewById(R.id.toggleButton);
         speechProgress = (ProgressBar) findViewById(R.id.progressBar);
-        showTextView = (Button) findViewById(R.id.openTextScreen);
-        keywordsTitle = (TextView) findViewById(R.id.keywordsTitle);
         countDownTimer = (TextView) findViewById(R.id.countDownTimer);
-        savePresentation = (Button) findViewById(R.id.savePresentation);
 
         getPreferences();
 
@@ -191,7 +210,7 @@ public class Presentation extends Activity{
                     mSpeechRecognizer.startListening(mSpeechRecognizerIntent);
                     speechProgress.setVisibility(View.VISIBLE);
                     speechProgress.setIndeterminate(true);
-                    countDownTimer.setVisibility(View.VISIBLE);
+                    countdownCard.setVisibility(View.VISIBLE);
                     timer = new CountDownTimer(timeLimitInMills, 1000){
                         public void onTick(long millisUntilFinished){
                             countDownTimer.setText("Resterende Tijd: " + presentationLogic.convertSecondsToMmSs(millisUntilFinished));
@@ -204,7 +223,7 @@ public class Presentation extends Activity{
                             }
                         }
                         public void onFinish(){
-                            countDownTimer.setVisibility(View.INVISIBLE);
+                            countdownCard.setVisibility(View.INVISIBLE);
                         }
                     }.start();
                 } else {
@@ -234,31 +253,21 @@ public class Presentation extends Activity{
     }
 
     public void hideTextViews(){
-        spokenWords.setVisibility(View.INVISIBLE);
-        spokenWordsTitle.setVisibility(View.INVISIBLE);
-        keywordsTitle.setVisibility(View.INVISIBLE);
-        timeElapsed.setVisibility(View.INVISIBLE);
-        timeElapsedTitle.setVisibility(View.INVISIBLE);
-        mostRepeated.setVisibility(View.INVISIBLE);
-        mostRepeatedTitle.setVisibility(View.INVISIBLE);
-        showTextView.setVisibility(View.INVISIBLE);
-        countDownTimer.setVisibility(View.INVISIBLE);
+        spokenWordsCard.setVisibility(View.INVISIBLE);
+        mostSpokenCard.setVisibility(View.INVISIBLE);
+        elapsedTimeCard.setVisibility(View.INVISIBLE);
+        countdownCard.setVisibility(View.INVISIBLE);
+        showTextCard.setVisibility(View.INVISIBLE);
+        savePresentationCard.setVisibility(View.INVISIBLE);
     }
 
     public void showTextView(){
-        if(showKeyWords == true) {
-            keywordsTitle.setVisibility(View.VISIBLE);
-        }
-        spokenWords.setVisibility(View.VISIBLE);
-        spokenWordsTitle.setVisibility(View.VISIBLE);
-        if(showMostSpokenWords) {
-            mostRepeatedTitle.setVisibility(View.VISIBLE);
-        }
-        timeElapsed.setVisibility(View.VISIBLE);
-        timeElapsedTitle.setVisibility(View.VISIBLE);
-        mostRepeated.setVisibility(View.VISIBLE);
-        showTextView.setVisibility(View.VISIBLE);
-        countDownTimer.setVisibility(View.INVISIBLE);
+        spokenWordsCard.setVisibility(View.VISIBLE);
+        mostSpokenCard.setVisibility(View.VISIBLE);
+        elapsedTimeCard.setVisibility(View.VISIBLE);
+        countdownCard.setVisibility(View.INVISIBLE);
+        showTextCard.setVisibility(View.VISIBLE);
+        savePresentationCard.setVisibility(View.VISIBLE);
     }
 
     public void showResults(double seconds, ArrayList<String> result){
@@ -266,9 +275,11 @@ public class Presentation extends Activity{
             spokenWords.setText(String.format(Integer.toString(presentationLogic.countWords(result))));
             timeElapsed.setText(String.format(Double.toString(seconds) + " seconden"));
             if(showKeyWords) {
+                mostRepeatedTitle.setText(R.string.showKeywords);
                 mostRepeated.setText(String.format(presentationLogic.countKeyWords(keyWords, presentationLogic.countWords(result), result).toString()));
             }
             if(showMostSpokenWords) {
+                mostRepeatedTitle.setText(R.string.showMostSpoken);
                 mostRepeated.setText(String.format(presentationLogic.countMostRepeated(result).getKey() + "(" + Integer.toString(presentationLogic.countMostRepeated(result).getValue()) + ")"));
             }
         }

@@ -6,8 +6,9 @@
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
     <string name="tap_on_mic">Tap on mic to speak</string>
     <string name="title_activity_main_screen">MainScreen</string>
-    <string name="showKeywords">Gesproken Keywords</string>
+    <string-array name="showWords"><item>@string/showKeywords</item><item>@string/showMostSpoken</item></string-array>
     <string name="showMostSpoken">Meest Voorkomende Woord</string>
+    <string name="showKeywords">Gesproken Keywords</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

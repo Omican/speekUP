@@ -9,38 +9,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
     tools:context="com.example.maickel.speechy.choosePresentationMode">
 
-    <TextView
-        android:text="Kies een modus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:id="@+id/choosePresentationTitle"
-        android:textSize="18sp" />
+    <android.support.v7.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:id="@+id/presentationCard">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Presenteer Mode"
+            android:textSize="18dp"
+            android:gravity="center"/>
+    </android.support.v7.widget.CardView>
 
-    <Button
-        android:text="Presenteer Mode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/choosePresentationTitle"
-        android:background="@drawable/buttonshapelarge"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="101dp"
-        android:id="@+id/presentationModeButon"
-        android:onClick="openPresentationMode"
-        android:textSize="14sp" />
+    <android.support.v7.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:id="@+id/trainingCard"
+        android:layout_below="@id/presentationCard"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Oefen mode"
+            android:textSize="18dp"
+            android:gravity="center"/>
 
-    <Button
-        android:text="Oefen mode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttonshapelarge"
-        android:layout_marginTop="77dp"
-        android:id="@+id/practiceModeButton"
-        android:layout_below="@+id/presentationModeButon"
-        android:onClick="openPracticeMode"
-        android:layout_centerHorizontal="true" />
+    </android.support.v7.widget.CardView>
 </RelativeLayout>

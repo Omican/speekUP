@@ -4,8 +4,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
     android:orientation="vertical">
 
+    <android.support.v7.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:id="@+id/spokenWordsCard">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Gesproken Woorden"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spokenWords"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="16dp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:id="@+id/elapsedTimeCard"
+        android:layout_below="@id/spokenWordsCard"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Verlopen Tijd"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/elapsedTime"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="16dp" />
+        
+    </android.support.v7.widget.CardView>
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:id="@+id/mostSpokenCard"
+        android:layout_below="@id/elapsedTimeCard"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:id="@+id/mostRepeatedTitle"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostRepeated"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.CardView>
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:id="@+id/countdownCard"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countDownTimer"
+            android:layout_gravity="center"
+            android:textSize="16dp" />
+
+    </android.support.v7.widget.CardView>
     <TextView
         android:id="@+id/txtSpeechInput"
         android:layout_width="wrap_content"
@@ -17,18 +107,6 @@
         android:textSize="26dp"
         android:textStyle="normal" />
 
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:background="@drawable/check"
-        android:layout_height="80dp"
-        android:id="@+id/toggleButton"
-        android:textOn=" "
-        android:textOff=" "
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/timeElapsedTitle"
-        android:layout_marginBottom="26dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,8 +115,20 @@
         android:id="@+id/micText"
         android:textSize="15dp"
         android:textStyle="normal"
-        android:layout_above="@+id/toggleButton"
-        android:layout_alignStart="@+id/keywordsTitle" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:background="@drawable/check"
+        android:layout_height="80dp"
+        android:id="@+id/toggleButton"
+        android:textOn=" "
+        android:textOff=" "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/micText"/>
+
+
 
     <ProgressBar
         style="?android:attr/progressBarStyleLarge"
@@ -48,107 +138,30 @@
         android:layout_alignTop="@+id/toggleButton"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="Gesproken Woorden"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:id="@+id/spokenWordsTitle"
-        android:layout_above="@+id/spokenWords"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp" />
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/savePresentationButton"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="230dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Opslaan"
+            android:textSize="14dp"/>
+    </android.support.v7.widget.CardView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/countDownTimer"
-        android:textAlignment="center"
-        android:textSize="16dp"
-        android:paddingTop="20dp"
-        android:background="@drawable/textbackground"
-        android:layout_below="@+id/timeElapsedTitle"
-        android:layout_alignStart="@+id/mostRepeated" />
-
-    <TextView
-        android:text="Verlopen Tijd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/timeElapsedTitle"
-        android:layout_below="@+id/spokenWords"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/textbackground"
-        android:id="@+id/spokenWords"
-        android:textAlignment="center"
-        android:textSize="16dp"
-        android:paddingTop="20dp"
-        android:layout_alignBaseline="@+id/txtSpeechInput"
-        android:layout_alignBottom="@+id/txtSpeechInput"
-        android:layout_alignStart="@+id/elapsedTime" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/elapsedTime"
-        android:textAlignment="center"
-        android:textSize="16dp"
-        android:paddingTop="20dp"
-        android:background="@drawable/textbackground"
-        android:layout_below="@+id/timeElapsedTitle"
-        android:layout_alignStart="@+id/countDownTimer"
-        android:layout_marginTop="11dp" />
-
-    <TextView
-        android:text="@string/showMostSpoken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/mostRepeatedTitle"
-        android:layout_below="@+id/elapsedTime"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="Gesproken Keywords"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/keywordsTitle"
-        android:layout_alignBaseline="@+id/mostRepeatedTitle"
-        android:layout_alignBottom="@+id/mostRepeatedTitle"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/textbackground"
-        android:id="@+id/mostRepeated"
-        android:textAlignment="center"
-        android:paddingTop="20dp"
-        android:textSize="16dp"
-        android:layout_below="@+id/mostRepeatedTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp" />
-
-    <Button
-        android:text="Presentatie Opslaan"
-        android:textSize="10dp"
-        android:onClick="savePresentation"
-        android:background="@drawable/buttonshape"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/savePresentation"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/spokenWordsTitle" />
-
-    <Button
-        android:text="Geef tekst weer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/openTextScreen"
-        android:background="@drawable/buttonshape"
-        android:textSize="10dp"
-        android:onClick="openTextView"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/micText" />
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/openTextScreenButton"
+        android:layout_marginTop="480dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Text weergeven"
+            android:textSize="14dp"/>
+    </android.support.v7.widget.CardView>
 </RelativeLayout>
