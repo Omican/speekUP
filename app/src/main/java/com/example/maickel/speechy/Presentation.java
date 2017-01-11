@@ -1,12 +1,15 @@
 package com.example.maickel.speechy;
 
 
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -26,6 +29,8 @@ import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.support.v7.widget.CardView;
+import android.text.format.DateFormat;
+import android.text.style.TtsSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +38,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class Presentation extends Activity{
@@ -170,6 +176,11 @@ public class Presentation extends Activity{
         savePresentationCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try {
+                    savePresentation();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
             }
         });
         showTextCard.setOnClickListener(new View.OnClickListener() {
@@ -304,12 +315,23 @@ public class Presentation extends Activity{
     }
 
     public void savePresentation() throws IOException {
-        File file = new File(getDir("data", MODE_PRIVATE), "keyWordsMap");
-        ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(file));
-        Map<String, Integer> keyWordMap = presentationLogic.countKeyWordsMap(keyWords, presentationLogic.countWords(result), result);
-        outputStream.writeObject(keyWordMap);
+        File makeDir = new File(getCacheDir(), "SavedPresentations");
+
+        if(!makeDir.exists()){
+            makeDir.mkdir();
+        }
+        java.text.DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd;HH.mm.ss");
+        Date date = new Date();
+        String formattedDate = dateFormat.format(date);
+        String title = ("Presentatie-"+ formattedDate);
+        File file = new File(getCacheDir() + "/SavedPresentations", title);
+        ObjectOutputStream outputStream = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
+        result.add(title);
+        outputStream.writeObject(result);
         outputStream.flush();
         outputStream.close();
+
+        Toast.makeText(this, "Presentatie Opgeslagen", Toast.LENGTH_SHORT).show();
     }
 
 

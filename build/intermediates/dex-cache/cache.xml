@@ -3,192 +3,192 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_e0d2aa4194ae4f75a6087d77711d2d394fa146cf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_c41fb8624abfdcf73123f83a822c20ec5ec37fa0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_1b7c98dd543561ed7187656b6feb968ffc91e481\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_2c9101554dea4daa2f9765ddafa38c5c4bf0d00e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_dfc148552351f11a680e34ab4d92fa58d5083292\classes.dex" />
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_6100e25c73a24093c19253cf7f9776b4d2bb10c6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_787039a0369d89392acc131fea471a0d9a0c71cb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_2097ec16777a6739e0afa8ba86a026de28cbfb71\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f4f6cec14d8ab2f6d05ffc86c3659dd59ca49c82\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_564f2ba1610e6e40d81acceced58c18c6958cb94\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.6\b036abbb61656165da99cf44898e4b9123687e65\MPAndroidChart-v2.1.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b036abbb61656165da99cf44898e4b9123687e65">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.1.6_3bb7035187c90fbf580a8caf95152bd019dc56a7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jar="C:\Users\Maickel\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_1bddc1f0e807c0149191b5eb89f6511d3a18cb5e\classes.dex" />
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_a39937952d8dadddef54a8691c4315cf79077d0d\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.0.0\jars\classes.jar"
+        jar="C:\Users\Maickel\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.6\b036abbb61656165da99cf44898e4b9123687e65\MPAndroidChart-v2.1.6.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.0.0_7e4897a63e29ed24f4bf038779959ae83fe89420\classes.dex" />
+        sha1="b036abbb61656165da99cf44898e4b9123687e65">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.1.6_3f019d76447f1160acb76c0531bb883926ff6562\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="1a39f9df854e0511110bd4a55b0747c8c1a7108f">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a70a39481704794da86e40b5205545517865f7ae\classes.dex" />
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1d3f7551fbe532a6ca7c48ecf81d50deaa69a1cd\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_740e1cd53b36e539330f60ec44636f967f160232\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_c549a3d2e6edd0c195dbcf0cbb61be0715478dc1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_1ff4cc2cc532ccd5d44ed19d17756184a03a58a1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_fe642bdafae9f88dcbd2d5e8daedbf9b31dd4fb3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_cfcecace0b0cd4a1c8f906303f9261894a5f4fee\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_6c8fab818f5909e8a12b201954129f2eea13a41d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="cee17686c5db1dc2c2d2904df447266340980ae7">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d085bd3c69409007dec5f5cfe865e89f465086c4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_922511df40ea19e9d1f830802759516e5df0a09b\classes.dex" />
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1cb80aadffc30de370ac6d038df1a417a7ca2e85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_68f9efbb2880de4d08b67812f119079f27baa71f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_cbd4350e03192270e9687bcf2da85b75d46dd7f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_5c7a3bffe8bad93d4db00406f6868429e688696b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1417819b492f5fb246aa3ef4834afe332a32e3ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_9c6227020d9662b1d09d4bc35c84c2487fe46030\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_17bde3ec3b847d4d9a5e4aba919ddcd246a806d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f522e48e8f2ec40baab56b37d4fd4a49f828eb59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_e0fb20999717db45c0a66f3ae021e4eeef94d98e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1c96371377bbe60aaca4317aba3a254f8223f9ab">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0da98c289d8b48d0770f4dee9cdcda30c09ae10a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_5315d29aac3180411139ced063d0cff79718cb39\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_9ccb58831fae0ba5e887809e9abf1cba14512d76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_d82ee3adf796ba1d211bddb0ce80bab0fcdafa39\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.0.0_c34de8064a63de9fe360335ff43f3b060abd5e73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_715fea987ee427963e3dfbc0e85aab1a3733613d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1778293c0fa5292a15ea97c66cff8c5a12c10d74">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_10794f89ab2f6f24a15037d19c790e673b594ae9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_8839eba2848d9a1fd4198fd02cc104eb0f50ef8e\classes.dex" />
     </item>
 
 </items>

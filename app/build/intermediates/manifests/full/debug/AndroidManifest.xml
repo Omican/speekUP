@@ -34,6 +34,7 @@
         <activity android:name="com.example.maickel.speechy.Options" />
         <activity android:name="com.example.maickel.speechy.choosePresentationMode" />
         <activity android:name="com.example.maickel.speechy.Analytics" />
+        <activity android:name="com.example.maickel.speechy.Recordings" />
     </application>
 
 </manifest>

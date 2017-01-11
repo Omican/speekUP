@@ -28,4 +28,9 @@ public class MainScreen extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), Analytics.class);
         startActivity(intent);
     }
+
+    public void openRecordingsScreen(View v){
+        Intent intent = new Intent(getApplicationContext(), Recordings.class);
+        startActivity(intent);
+    }
 }

@@ -5,9 +5,9 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="575287621371732"
+    timestamp="1760370962625387"
     token="-4468284817517687232"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
@@ -23,11 +23,32 @@
         duration="0" />
 
     <artifact
-        location="C:\Users\Maick\AndroidStudioProjects\Speechy\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="1586078627758089"
+        timestamp="1754829813359551"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Maickel\Documents\speekUP\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="1759213109037974"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="1760131083463530"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="1760370962625387"
         verifier="COMPATIBLE" >
         <artifact
             location="C:\Users\Maickel\Documents\speekUP\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"

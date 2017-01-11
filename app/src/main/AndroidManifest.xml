@@ -31,7 +31,8 @@
         <activity android:name=".ShowText" />
         <activity android:name=".Options" />
         <activity android:name=".choosePresentationMode" />
-        <activity android:name=".Analytics"></activity>
+        <activity android:name=".Analytics" />
+        <activity android:name=".Recordings"></activity>
     </application>
 
 </manifest>
