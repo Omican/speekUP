@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 48,
+                        "endOffset": 101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 104,
+                    "endColumn": 47,
+                    "endOffset": 147
+                },
+                "from": {
+                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 47,
+                        "endOffset": 150
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 152,
+                    "endColumn": 49,
+                    "endOffset": 197
+                },
+                "from": {
+                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 156,
+                        "endColumn": 49,
+                        "endOffset": 201
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 202,
+                    "endColumn": 49,
+                    "endOffset": 247
+                },
+                "from": {
+                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 207,
+                        "endColumn": 49,
+                        "endOffset": 252
+                    }
+                }
+            }
+        ]
+    }
+]

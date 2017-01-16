@@ -60,22 +60,25 @@ public class Recordings extends AppCompatActivity {
         resultsArray = new ArrayList<ArrayList<String>>();
         try {
             File file = new File(getCacheDir(), "SavedPresentations");
-            File[] files = file.listFiles();
-            for (int i = 0; i < files.length; i++) {
-                ObjectInputStream br = new ObjectInputStream(new FileInputStream(files[i]));
-                Object readString = br.readObject();
-                String[] results = readString.toString().replaceAll("\\[", "").replaceAll("\\]", "").replaceAll("\\.", ":").replaceAll(";", " ").split(", ");
-
-                cardTitles.add(results[results.length - 1]);
-
-                ArrayList<String> resultList = new ArrayList<>();
-
-                for(int j = 0; j < results.length - 1; j++){
-                    resultList.add(results[j]);
-                }
-
-                resultsArray.add(resultList);
+            if(!file.exists()){
+                file.mkdir();
             }
+            File[] files = file.listFiles();
+                for (int i = 0; i < files.length; i++) {
+                    ObjectInputStream br = new ObjectInputStream(new FileInputStream(files[i]));
+                    Object readString = br.readObject();
+                    String[] results = readString.toString().replaceAll("\\[", "").replaceAll("\\]", "").replaceAll("\\.", ":").replaceAll(";", " ").split(", ");
+
+                    cardTitles.add(results[results.length - 1]);
+
+                    ArrayList<String> resultList = new ArrayList<>();
+
+                    for (int j = 0; j < results.length - 1; j++) {
+                        resultList.add(results[j]);
+                    }
+
+                    resultsArray.add(resultList);
+                }
         }catch (FileNotFoundException e){
 
         } catch (IOException e){

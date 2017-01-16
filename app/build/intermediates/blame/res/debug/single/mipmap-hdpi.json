@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -8,8 +12,20 @@
         "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\mipmap-hdpi\\android_stoprecord.png"
     },
     {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\android_stoprecord.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\mipmap-hdpi\\android_stoprecord.png"
+    },
+    {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_record.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\mipmap-hdpi\\ic_record.png"
+    },
+    {
         "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\android_startrecord.png",
         "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\mipmap-hdpi\\android_startrecord.png"
+    },
+    {
+        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\android_startrecord.png",
+        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\mipmap-hdpi\\android_startrecord.png"
     },
     {
         "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_record.png",
