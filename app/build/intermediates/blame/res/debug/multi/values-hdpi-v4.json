@@ -7,38 +7,449 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 6,
-                    "endColumn": 13,
-                    "endOffset": 327
+                    "endColumn": 52,
+                    "endOffset": 103
                 },
                 "from": {
-                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 213,
+                        "endColumn": 52,
+                        "endOffset": 261
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 108,
+                    "endColumn": 51,
+                    "endOffset": 155
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 830,
+                        "endColumn": 51,
+                        "endOffset": 877
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 160,
+                    "endColumn": 55,
+                    "endOffset": 211
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1288,
+                        "endColumn": 55,
+                        "endOffset": 1339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 216,
+                    "endColumn": 55,
+                    "endOffset": 267
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1231,
+                        "endColumn": 55,
+                        "endOffset": 1282
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 272,
+                    "endColumn": 53,
+                    "endOffset": 321
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1063,
+                        "endColumn": 53,
+                        "endOffset": 1112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 326,
+                    "endColumn": 62,
+                    "endOffset": 384
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 934,
+                        "endColumn": 62,
+                        "endOffset": 992
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 389,
+                    "endColumn": 61,
+                    "endOffset": 446
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 998,
+                        "endColumn": 61,
+                        "endOffset": 1055
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 451,
+                    "endColumn": 49,
+                    "endOffset": 496
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 883,
+                        "endColumn": 49,
+                        "endOffset": 928
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 501,
+                    "endColumn": 56,
+                    "endOffset": 553
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1173,
+                        "endColumn": 56,
+                        "endOffset": 1225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 558,
+                    "endColumn": 53,
+                    "endOffset": 607
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1118,
+                        "endColumn": 53,
+                        "endOffset": 1167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 612,
+                    "endColumn": 48,
+                    "endOffset": 656
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 6,
-                        "endColumn": 13,
-                        "endOffset": 327
+                        "startOffset": 57,
+                        "endColumn": 48,
+                        "endOffset": 101
                     }
                 }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
-        "map": [
+            },
             {
                 "to": {
-                    "startLine": 2,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 55,
-                    "endLine": 6,
-                    "endColumn": 13,
-                    "endOffset": 327
+                    "startOffset": 661,
+                    "endColumn": 47,
+                    "endOffset": 704
                 },
                 "from": {
-                    "file": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 47,
+                        "endOffset": 150
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 709,
+                    "endColumn": 57,
+                    "endOffset": 762
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 369,
+                        "endColumn": 57,
+                        "endOffset": 422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 767,
+                    "endColumn": 63,
+                    "endOffset": 826
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 608,
+                        "endColumn": 63,
+                        "endOffset": 667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 831,
+                    "endColumn": 62,
+                    "endOffset": 889
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 544,
+                        "endColumn": 62,
+                        "endOffset": 602
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 894,
+                    "endColumn": 56,
+                    "endOffset": 946
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 428,
+                        "endColumn": 56,
+                        "endOffset": 480
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 951,
+                    "endColumn": 55,
+                    "endOffset": 1002
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 156,
+                        "endColumn": 55,
+                        "endOffset": 207
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1007,
+                    "endColumn": 56,
+                    "endOffset": 1059
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 486,
+                        "endColumn": 56,
+                        "endOffset": 538
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1064,
+                    "endColumn": 49,
+                    "endOffset": 1109
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 726,
+                        "endColumn": 49,
+                        "endOffset": 771
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1114,
+                    "endColumn": 49,
+                    "endOffset": 1159
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 267,
+                        "endColumn": 49,
+                        "endOffset": 312
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1164,
+                    "endColumn": 49,
+                    "endOffset": 1209
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 318,
+                        "endColumn": 49,
+                        "endOffset": 363
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1214,
+                    "endColumn": 51,
+                    "endOffset": 1261
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 777,
+                        "endColumn": 51,
+                        "endOffset": 824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1266,
+                    "endColumn": 51,
+                    "endOffset": 1313
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 673,
+                        "endColumn": 51,
+                        "endOffset": 720
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1318,
+                    "endLine": 29,
+                    "endColumn": 13,
+                    "endOffset": 1590
+                },
+                "from": {
+                    "file": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

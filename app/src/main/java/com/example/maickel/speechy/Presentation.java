@@ -17,10 +17,13 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -28,6 +31,9 @@ import android.os.Vibrator;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
 import android.text.format.DateFormat;
 import android.text.style.TtsSpan;
@@ -78,7 +84,9 @@ public class Presentation extends Activity{
     private long timeLimitInMills;
     private TextView countDownTimer;
     private CountDownTimer timer;
+    private static final int WRITE_EXTERNAL_STORAGE = 0;
     private Button savePresentation;
+    private boolean permissionGranted;
     //endregion
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,16 +94,17 @@ public class Presentation extends Activity{
         setContentView(R.layout.activity_main);
         presentationLogic = new PresentationLogic();
 
+
+
         mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(getApplicationContext());
         mSpeechRecognizer.setRecognitionListener(new RecognitionListener() {
             @Override
             public void onReadyForSpeech(Bundle params) {
-                Log.i(LOG_TAG, "onBeginningOfSpeech");
             }
 
             @Override
             public void onBeginningOfSpeech() {
-                Log.i(LOG_TAG, "onBeginningOfSpeech");
+
             }
 
             @Override
@@ -110,7 +119,6 @@ public class Presentation extends Activity{
 
             @Override
             public void onEndOfSpeech() {
-                Log.i(LOG_TAG, "onEndOfSpeech");
 
             }
 
@@ -122,7 +130,6 @@ public class Presentation extends Activity{
             @Override
             public void onResults(Bundle results) {
                 mSpeechRecognizer.startListening(mSpeechRecognizerIntent);
-                Log.i(LOG_TAG, "onResults");
                 long elapsedTime = System.currentTimeMillis() - startTime;
                 seconds = elapsedTime / 1000.0;
 
@@ -139,8 +146,6 @@ public class Presentation extends Activity{
 
             @Override
             public void onPartialResults(Bundle partialResults) {
-                Log.i(LOG_TAG, "partialResults");
-
                 ArrayList<String>  partial = partialResults.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 ArrayList<String> temp = new ArrayList<String>(keyWords);
                     if(enableAlerts) {
@@ -170,9 +175,9 @@ public class Presentation extends Activity{
         elapsedTimeCard = (CardView) findViewById(R.id.elapsedTimeCard);
         mostSpokenCard = (CardView) findViewById(R.id.mostSpokenCard);
         countdownCard = (CardView) findViewById(R.id.countdownCard);
-        savePresentationCard = (CardView) findViewById(R.id.savePresentationButton);
-        showTextCard = (CardView) findViewById(R.id.openTextScreenButton);
 
+        showTextCard = (CardView) findViewById(R.id.openTextScreenButton);
+        savePresentationCard = (CardView) findViewById(R.id.savePresentationButton);
         savePresentationCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -246,8 +251,12 @@ public class Presentation extends Activity{
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            showResults(seconds, result);
-                            showTextView();
+                            if(result.size() > 0) {
+                                showResults(seconds, result);
+                                showTextView();
+                            } else {
+                                showNoAudioFoundDialog();
+                            }
                         }
                     },1000
                     );
@@ -279,6 +288,31 @@ public class Presentation extends Activity{
         countdownCard.setVisibility(View.INVISIBLE);
         showTextCard.setVisibility(View.VISIBLE);
         savePresentationCard.setVisibility(View.VISIBLE);
+    }
+
+    public void showNoAudioFoundDialog(){
+        new AlertDialog.Builder(this)
+                .setTitle("Geen spraak waargenomen")
+                .setMessage("Er is geen spraak waargenomen. Probeer opnieuw.")
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        SharedPreferences prefs = getSharedPreferences("my_prefs", 0);
+                        selectedMode = prefs.getString("presentationMode", "");
+                        if(selectedMode.equals("presentationMode")){
+                            SharedPreferences presentationPrefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
+                            SharedPreferences.Editor edit = presentationPrefs.edit();
+                            edit.putString("presentationMode", "presentationMode");
+                            edit.apply();
+                            recreate();
+                        } else if(selectedMode.equals("practiceMode")){
+                            SharedPreferences practicePrefs = getSharedPreferences("my_prefs", MODE_PRIVATE);
+                            SharedPreferences.Editor edit = practicePrefs.edit();
+                            edit.putString("presentationMode", "practiceMode");
+                            edit.apply();
+                            recreate();
+                        }
+                    }}).show();
     }
 
     public void showResults(double seconds, ArrayList<String> result){
@@ -314,24 +348,60 @@ public class Presentation extends Activity{
         }
     }
 
-    public void savePresentation() throws IOException {
-        File makeDir = new File(getCacheDir(), "SavedPresentations");
-
-        if(!makeDir.exists()){
-            makeDir.mkdir();
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case WRITE_EXTERNAL_STORAGE: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                        permissionGranted = true;
+                } else {
+                    permissionGranted = false;
+                }
+                return;
+            }
         }
-        java.text.DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd;HH.mm.ss");
-        Date date = new Date();
-        String formattedDate = dateFormat.format(date);
-        String title = ("Presentatie-"+ formattedDate);
-        File file = new File(getCacheDir() + "/SavedPresentations", title);
-        ObjectOutputStream outputStream = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
-        result.add(title);
-        outputStream.writeObject(result);
-        outputStream.flush();
-        outputStream.close();
+    }
 
-        Toast.makeText(this, "Presentatie Opgeslagen", Toast.LENGTH_SHORT).show();
+    public void savePresentation() throws IOException {
+        permissionGranted = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            } else {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                        WRITE_EXTERNAL_STORAGE);
+            }
+        }
+        if(permissionGranted){
+            try {
+                File makeDir = new File(getCacheDir(), "SavedPresentations");
+
+                if (!makeDir.exists()) {
+                    makeDir.mkdir();
+                }
+                java.text.DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd;HH.mm.ss");
+                Date date = new Date();
+                String formattedDate = dateFormat.format(date);
+                String title = ("Presentatie-" + formattedDate);
+                File file = new File(getCacheDir() + "/SavedPresentations", title);
+                ObjectOutputStream outputStream = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
+                result.add(title);
+                outputStream.writeObject(result);
+                outputStream.flush();
+                outputStream.close();
+
+                Toast.makeText(this, "Presentatie Opgeslagen", Toast.LENGTH_SHORT).show();
+            } catch (IOException e){
+                e.printStackTrace();
+            }
+        }
+
     }
 
 

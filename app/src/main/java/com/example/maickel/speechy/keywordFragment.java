@@ -39,6 +39,7 @@ public class KeywordFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
@@ -113,8 +114,6 @@ public class KeywordFragment extends Fragment {
         SharedPreferences.Editor edit = prefs.edit();
         edit.putStringSet("KeyWords", keyWordsSet);
         edit.apply();
-        Intent intent = new Intent(getContext(), MainScreen.class);
-        startActivity(intent);
     }
 
     public void clearText(View v){

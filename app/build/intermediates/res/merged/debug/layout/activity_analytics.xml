@@ -10,13 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.maickel.speechy.Analytics">
 
-    <com.github.mikephil.charting.charts.BarChart
-    android:id="@+id/chart"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-        android:layout_marginTop="56dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Coming Soon"
+        android:textSize="20dp"/>
 
 </RelativeLayout>
 

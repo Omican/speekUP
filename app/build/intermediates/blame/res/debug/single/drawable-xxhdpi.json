@@ -1,35 +1,23 @@
 [
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_startrecord.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_startrecord.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_flag_black_24dp.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_flag_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_stoprecord.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_stoprecord.png"
-    },
-    {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_name.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
-    },
-    {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_flag_black_24dp.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_flag_black_24dp.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\stoprecord.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\stoprecord.png"
     },
     {
         "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_startrecord.png",
         "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\drawable-xxhdpi\\ic_startrecord.png"
     },
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_poll_black_24dp.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_poll_black_24dp.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_poll_black_24dp.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_poll_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_keyboard_voice_black_24dp.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_keyboard_voice_black_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\stoprecord.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\stoprecord.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\startrecord.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\startrecord.png"
     },
     {
         "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_mic.png",
@@ -40,15 +28,11 @@
         "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\drawable-xxhdpi\\ic_stoprecord.png"
     },
     {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_mic.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_mic.png"
+        "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_keyboard_voice_black_24dp.png",
+        "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_keyboard_voice_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_name.png",
         "source": "C:\\Users\\Maickel\\Documents\\speekUP\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
-    },
-    {
-        "merged": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\startrecord.png",
-        "source": "C:\\Users\\Maick\\AndroidStudioProjects\\Speechy\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\startrecord.png"
     }
 ]

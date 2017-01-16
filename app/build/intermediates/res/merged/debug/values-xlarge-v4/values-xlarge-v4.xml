@@ -6,6 +6,8 @@
     <item name="abc_dialog_fixed_width_minor" type="dimen">70%</item>
     <item name="abc_dialog_min_width_major" type="dimen">45%</item>
     <item name="abc_dialog_min_width_minor" type="dimen">72%</item>
-    <dimen name="menu_card_height">200dp</dimen>
-    <dimen name="menu_card_width">500dp</dimen>
+    <dimen name="menu_card_height">150dp</dimen>
+    <dimen name="menu_card_width">600dp</dimen>
+    <dimen name="save_button_height">80dp</dimen>
+    <dimen name="save_button_width">300dp</dimen>
 </resources>

@@ -7,8 +7,10 @@
     <item name="abc_dialog_fixed_width_minor" type="dimen">90%</item>
     <item name="abc_dialog_min_width_major" type="dimen">55%</item>
     <item name="abc_dialog_min_width_minor" type="dimen">80%</item>
-    <dimen name="menu_card_height">160dp</dimen>
+    <dimen name="menu_card_height">150dp</dimen>
     <dimen name="menu_card_width">400dp</dimen>
+    <dimen name="save_button_height">80dp</dimen>
+    <dimen name="save_button_width">300dp</dimen>
     <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="Base.Theme.AppCompat.Dialog.FixedSize"/>
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize"/>
 </resources>
